@@ -1,7 +1,7 @@
 # JTPE
 
 JTPEngine is a 2D C++ Game Engine.
-Its goal is provide an abstract, lightweight and cross-platform ready engine completely in C++ and JSON scripting.
+Its goal is to provide an abstract, lightweight and cross-platform ready engine that uses only C++ and JSON scripting.
 This engine is designed for coders who wants a starting point to create 2D apps and games without messing with major engines on the market.
 
 # Modules and build examples:
