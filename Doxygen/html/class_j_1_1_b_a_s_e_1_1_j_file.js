@@ -1,0 +1,25 @@
+var class_j_1_1_b_a_s_e_1_1_j_file =
+[
+    [ "JFile", "class_j_1_1_b_a_s_e_1_1_j_file.html#ab3804015538dab22921b163320acecba", null ],
+    [ "~JFile", "class_j_1_1_b_a_s_e_1_1_j_file.html#ac4e4793af84a2d84c360ba687f22e4f6", null ],
+    [ "Activate", "class_j_1_1_b_a_s_e_1_1_j_file.html#a8428182df7b2d649b85ae709ea2b6990", null ],
+    [ "Clear", "class_j_1_1_b_a_s_e_1_1_j_file.html#a3ea9b66bd6fc4ae72373f95965f751a7", null ],
+    [ "Deactivate", "class_j_1_1_b_a_s_e_1_1_j_file.html#a755e343598023037120da5a8d185e559", null ],
+    [ "GetBinData", "class_j_1_1_b_a_s_e_1_1_j_file.html#a98f5106c1e7726d2e93c17ee4961a225", null ],
+    [ "GetBinSize", "class_j_1_1_b_a_s_e_1_1_j_file.html#af0e4221facaadea44287e28ee329ff72", null ],
+    [ "GetFilePath", "class_j_1_1_b_a_s_e_1_1_j_file.html#a5cb3d3d903c5374489b5ffeabc3b3f0a", null ],
+    [ "GetStringData", "class_j_1_1_b_a_s_e_1_1_j_file.html#a36870f225a30cfd05c29c97343af45cf", null ],
+    [ "GetWStringData", "class_j_1_1_b_a_s_e_1_1_j_file.html#abde2d17eb04d0809299ee76804d93aa3", null ],
+    [ "Init", "class_j_1_1_b_a_s_e_1_1_j_file.html#a351351a0017e35f4ea3879080f7b6780", null ],
+    [ "IsReadyToGet", "class_j_1_1_b_a_s_e_1_1_j_file.html#ad580d83e35453f58b0bc9e431fb4c1b1", null ],
+    [ "Load", "class_j_1_1_b_a_s_e_1_1_j_file.html#a46d57ba1d33fd06decfd2acc42fba304", null ],
+    [ "LoadAsync", "class_j_1_1_b_a_s_e_1_1_j_file.html#a875c6384494d78fb56d61f8b7b4070d0", null ],
+    [ "operator=", "class_j_1_1_b_a_s_e_1_1_j_file.html#a30bb8931451332331ffbfef15b18146e", null ],
+    [ "operator==", "class_j_1_1_b_a_s_e_1_1_j_file.html#a20097ecf9b97e3fd3ceedc986e75b539", null ],
+    [ "Set", "class_j_1_1_b_a_s_e_1_1_j_file.html#a3b4d600c23dc1d7af40fbf9968889286", null ],
+    [ "Unload", "class_j_1_1_b_a_s_e_1_1_j_file.html#a01dfb3b4079481be7e5c99c62dbb011b", null ],
+    [ "Update", "class_j_1_1_b_a_s_e_1_1_j_file.html#a97fbd4a7f393f458a7e868fdf454022b", null ],
+    [ "Write", "class_j_1_1_b_a_s_e_1_1_j_file.html#a96dea2c490f9330e04db0c2416595c7e", null ],
+    [ "Write", "class_j_1_1_b_a_s_e_1_1_j_file.html#a0cd25c576614a4d01287a528f837c4c4", null ],
+    [ "Write", "class_j_1_1_b_a_s_e_1_1_j_file.html#a8aa15caa2d6e6562eef73fd16f6c85de", null ]
+];

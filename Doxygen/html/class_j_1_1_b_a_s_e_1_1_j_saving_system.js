@@ -1,0 +1,26 @@
+var class_j_1_1_b_a_s_e_1_1_j_saving_system =
+[
+    [ "JSavingSystem", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a9a30bf05582a135939fab5ce048e53e0", null ],
+    [ "~JSavingSystem", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a9f22f162ebef018d9ebe8aa72a622f09", null ],
+    [ "Activate", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a114af870c0cd09cc43af00abc1388a54", null ],
+    [ "ActivateData", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a507bd0e363d5c291c78be6f73c49880b", null ],
+    [ "Clear", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a18fe3757490ef346c61cbd2fa0f9550c", null ],
+    [ "ClearData", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a895ec3f8ba019fc5e262a02abf827963", null ],
+    [ "Deactivate", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#ac8513e711ab0f2d9f32cb70e36f80e99", null ],
+    [ "GetData", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#aec1930fdf29cbb417154d005101dc0b5", null ],
+    [ "Init", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a8bc95aea5812148f7d4906f80bdb64e9", null ],
+    [ "IsKeyExisting", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a8466f9a12cd632ace4e1073cf5e39bcd", null ],
+    [ "LoadData", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#ace6cbc35219b43ea6210ae923689bdd2", null ],
+    [ "SaveData", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#aa7e9f50a3ae3fdb9802686bb204fadee", null ],
+    [ "SetBool", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#ab63dcbd103e3fb2970fc484edf3a24d5", null ],
+    [ "SetFloat", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a1db7e42c44e604f786ad37690c669987", null ],
+    [ "SetInt", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a19dcd1c8903f8fb081d9bfb3565c8e7c", null ],
+    [ "SetJson", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#abee83abffe0b6dfb89ba0b01077c7d52", null ],
+    [ "SetString", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#afb10f91bbf0dec5826334a532842c0a5", null ],
+    [ "SetUnsignedInt", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#acdc06a4c2afd3b0e7308aa2f365037fa", null ],
+    [ "SetVectorOfJson", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#ad5a7f3021104403023aa44322fb1d87b", null ],
+    [ "Update", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a3c6e4cdbcd5423170b26bd3070b7b13f", null ],
+    [ "mCurrentDataKey", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a2c13339af1f329daf8da164b0be51d66", null ],
+    [ "mCurrentDataPath", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#a9eb602673a14a9776c1cab25a948837a", null ],
+    [ "mDatas", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html#ac831078e8328aa75afa4affa77221d5e", null ]
+];
