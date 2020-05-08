@@ -89,7 +89,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\DraftSoccerApp\Builds\</OutDir>
+    <OutDir>$(SolutionDir)..\Builds\x64\</OutDir>
+    <IntDir>$(SolutionDir)..\Builds\x64\Intermediate\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -161,18 +162,20 @@ XCOPY "$(SolutionDir)..\DLL\x64" "$(SolutionDir)..\Builds\x64"  /S /Y /E</Comman
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\..\JCommon;..\..\JCommon\JRender\JOGL\glew\include\GL;..\..\JCommon\JRender\JOGL\glew\include;..\..\JCommon\JRender\JOGL\glfw\include;..\..\JCommon\JRender\JOGL\glm\include;..\..\JApp;..\..\JCommon\simple2d;..\..\JCommon\simple2d\SDL2\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>JAppPch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\JCommon;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include\GL;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include;$(ProjectDir)..\..\..\JCommon\3rdParties\glfw\include;$(ProjectDir)..\..\..\JCommon\\3rdParties\glm\include;$(ProjectDir)..\..\..\JCommon\3rdParties\SDL\include;$(ProjectDir)\..\..\Source\;$(ProjectDir)\;$(ProjectDir)..\..\..\JCommon\3rdParties\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;simple2d.lib;</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
-      <Command>XCOPY "$(SolutionDir)..\JData\JData" "$(SolutionDir)..\JApp\Builds\JData\"  /S /Y /E</Command>
+      <Command>XCOPY "$(SolutionDir)..\Assets" "$(SolutionDir)..\Builds\x64\"  /S /Y /E
+XCOPY "$(SolutionDir)..\DLL\x64" "$(SolutionDir)..\Builds\x64"  /S /Y /E</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -203,6 +206,7 @@ XCOPY "$(SolutionDir)..\DLL\x64" "$(SolutionDir)..\Builds\x64"  /S /Y /E</Comman
     <ClCompile Include="JTBE_Builder_Windows.cpp" />
     <ClCompile Include="JAppPch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
