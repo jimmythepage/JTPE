@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{a6ed7f98-750f-4cb0-a42b-d68f92182d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Game">
+      <UniqueIdentifier>{32c04c73-5c32-44e7-806b-b44972068c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Screens">
+      <UniqueIdentifier>{ac2da99e-c361-4674-99dc-87dfeb76e646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Modules">
+      <UniqueIdentifier>{602859e7-3ea1-4b32-a84b-ef37e4abda59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JAppPch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\JAppDefines.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\JApp.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Screens\JBootScreen.h">
+      <Filter>App\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Screens\JSharedModules.h">
+      <Filter>App\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Screens\JMainMenuScreen.h">
+      <Filter>App\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Modules\JYesNoModule.h">
+      <Filter>App\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Modules\JOkModule.h">
+      <Filter>App\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="JTBE_Builder_Windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Game\GameSavingStruct.h">
+      <Filter>App\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Game\GameEngine.h">
+      <Filter>App\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\App\Screens\JMainGameScreen.h">
+      <Filter>App\Screens</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\App\JApp.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="JAppPch.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\App\Screens\JSharedModules.cpp">
+      <Filter>App\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\App\Screens\JBootScreen.cpp">
+      <Filter>App\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\App\Screens\JMainMenuScreen.cpp">
+      <Filter>App\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\App\Modules\JYesNoModule.cpp">
+      <Filter>App\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\App\Modules\JOkModule.cpp">
+      <Filter>App\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="JTBE_Builder_Windows.cpp" />
+    <ClCompile Include="..\..\Source\App\Game\GameEngine.cpp">
+      <Filter>App\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\App\Screens\JMainGameScreen.cpp">
+      <Filter>App\Screens</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="JTPE.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JTPE.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+{
+"name":"Placeholder",
+"applink":"PlaceholderLink",
+"JElements":
+[
+	{
+		"name":"PlaceholderSprite",
+		"applink":"PlaceholderSpriteLink",
+		"texture": "GUI/Images/placeholder.png",
+		"type":"JGameSprite",
+		"size":[64,64],
+		"position":[0,0],
+		"origin":[0.5,0.5],
+		"scale":[1,1]
+	}
+]
+}

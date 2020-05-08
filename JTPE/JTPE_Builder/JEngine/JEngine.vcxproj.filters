@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="JBase">
+      <UniqueIdentifier>{ecd9bd31-e2d0-4d9e-ab8a-208bd7054f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JGame">
+      <UniqueIdentifier>{e4ce7e3a-06d6-469d-ac0d-312660ede91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JInput">
+      <UniqueIdentifier>{549f8b4a-8bff-4dc4-b31d-c9884bce5cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JInput\Windows">
+      <UniqueIdentifier>{7c7971ab-5076-45ce-bbdf-7a7998cdbfce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JRender">
+      <UniqueIdentifier>{92e2ce79-710e-4d31-872c-7e1bd4ef290c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JRender\SFML">
+      <UniqueIdentifier>{63d1cc9e-80a5-427b-9105-716b0d19aab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JRender\JSDL">
+      <UniqueIdentifier>{76bf9c3c-56e2-449c-aa5b-3db9c42c5ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JTasks">
+      <UniqueIdentifier>{61a1bcbf-c8e1-4c81-a77c-1218ae3d462c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JTween">
+      <UniqueIdentifier>{fa5a19c5-2e47-4104-9cb5-b089a31e893d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JNet">
+      <UniqueIdentifier>{5a91fdc8-33f4-42ec-8adc-68e688717f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JPhysics">
+      <UniqueIdentifier>{14a0b92b-27ed-4a88-9682-80b20dfe3db8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp">
+      <Filter>JBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JBase\JFile.cpp">
+      <Filter>JBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JBase\JFileManager.cpp">
+      <Filter>JBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JBase\JObject.cpp">
+      <Filter>JBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JBase\JTextDB.cpp">
+      <Filter>JBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JBase\JTimer.cpp">
+      <Filter>JBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameButton.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameCamera.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameDraggable.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameElement.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameLevel.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameManager.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameModule.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameScreen.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameSprite.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameText.cpp">
+      <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JInput\JInputManager.cpp">
+      <Filter>JInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JInput\JInput_Keyboard.cpp">
+      <Filter>JInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JInput\JInput_Pointer.cpp">
+      <Filter>JInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JInput\Windows\JInputPointer_Win.cpp">
+      <Filter>JInput\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JInput\Windows\JInput_Keyboard_Win.cpp">
+      <Filter>JInput\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JRenderable.cpp">
+      <Filter>JRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JRenderer.cpp">
+      <Filter>JRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JRenderManager.cpp">
+      <Filter>JRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSprite.cpp">
+      <Filter>JRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JText.cpp">
+      <Filter>JRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JFontManagerSFML.cpp">
+      <Filter>JRender\SFML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JRendererSFML.cpp">
+      <Filter>JRender\SFML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JSpriteSFML.cpp">
+      <Filter>JRender\SFML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JTextSFML.cpp">
+      <Filter>JRender\SFML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JTextureManagerSFML.cpp">
+      <Filter>JRender\SFML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JRendererSDL.cpp">
+      <Filter>JRender\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JSpriteSDL.cpp">
+      <Filter>JRender\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JTextSDL.cpp">
+      <Filter>JRender\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JTextureManagerSDL.cpp">
+      <Filter>JRender\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\SDL_FontCache.c">
+      <Filter>JRender\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JTask\JTask.cpp">
+      <Filter>JTasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JTween\JBaseTween.cpp">
+      <Filter>JTween</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JTween\JFloatTween.cpp">
+      <Filter>JTween</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JCommonPch.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JEngine.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JBase\JSavingSystem.cpp">
+      <Filter>JBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JNet\JNetManager.cpp">
+      <Filter>JNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysics.cpp">
+      <Filter>JPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysicsManager.cpp">
+      <Filter>JPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JBody.cpp">
+      <Filter>JPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysicObject.cpp">
+      <Filter>JPhysics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\JCommon\JBase\iJBase.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\JBase.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\JBaseDefines.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\JFile.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\JFileManager.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\JObject.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\json.hpp">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\JTextDB.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JBase\JTimer.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameButton.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameCamera.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameDefines.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameDraggable.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameElement.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameLevel.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameManager.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameModule.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameScreen.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameSprite.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameText.h">
+      <Filter>JGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JInput\JInputDefines.h">
+      <Filter>JInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JInput\JInputManager.h">
+      <Filter>JInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JInput\JInput_Keyboard.h">
+      <Filter>JInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JInput\JInput_Pointer.h">
+      <Filter>JInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JInput\Windows\JInputPointer_Win.h">
+      <Filter>JInput\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JInput\Windows\JInput_Keyboard_Win.h">
+      <Filter>JInput\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JMaterial.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderable.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderDefines.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderer.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderManager.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSprite.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JText.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JFontManagerSFML.h">
+      <Filter>JRender\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JRendererSFML.h">
+      <Filter>JRender\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JSpriteSFML.h">
+      <Filter>JRender\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JTextSFML.h">
+      <Filter>JRender\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JTextureManagerSFML.h">
+      <Filter>JRender\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JRendererSDL.h">
+      <Filter>JRender\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JSpriteSDL.h">
+      <Filter>JRender\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JTextSDL.h">
+      <Filter>JRender\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JTextureManagerSDL.h">
+      <Filter>JRender\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\SDL_FontCache.h">
+      <Filter>JRender\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JTask\JTask.h">
+      <Filter>JTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JTween\JBaseTween.h">
+      <Filter>JTween</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JTween\JFloatTween.h">
+      <Filter>JTween</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JCommonPch.h" />
+    <ClInclude Include="..\..\..\JCommon\JEngine.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JSavingSystem.h">
+      <Filter>JBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JNet\JNetManager.h">
+      <Filter>JNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysicObject.h">
+      <Filter>JPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysics.h">
+      <Filter>JPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysicsManager.h">
+      <Filter>JPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JBody.h">
+      <Filter>JPhysics</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

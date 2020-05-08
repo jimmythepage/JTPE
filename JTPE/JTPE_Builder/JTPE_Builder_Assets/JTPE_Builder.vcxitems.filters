@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{afa1c4f9-7f9a-4c71-ba3e-1e408c2d9fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{5e5dca04-50e2-47f8-8515-8db5ef6da750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Modules">
+      <UniqueIdentifier>{e4adf12e-b5b1-417a-802f-492630cdbe51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Screens">
+      <UniqueIdentifier>{5a424299-9dbd-4948-953f-e24b0bb31f86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{4a134322-f6f1-4009-b4be-5c2186a10e4d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\ButtonModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\Settings.json">
+      <Filter>Settings</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\BootScreen.json">
+      <Filter>GUI\Screens</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\PlaceholderModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\PlaceholderTextModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\BootLogoModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\MainMenuScreen.json">
+      <Filter>GUI\Screens</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\YesNoModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\BlockerModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\MotivationalModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\TextDB.json">
+      <Filter>GUI</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\Game\Seasons.json">
+      <Filter>Game</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\OkModule.json">
+      <Filter>GUI\Modules</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\MainGameScreen.json">
+      <Filter>GUI\Screens</Filter>
+    </None>
+  </ItemGroup>
+</Project>

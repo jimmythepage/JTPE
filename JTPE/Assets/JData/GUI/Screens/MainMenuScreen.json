@@ -1,0 +1,35 @@
+{
+"name":"MainMenuScreen",
+"Modules":
+[
+	{
+		"name":"Placeholder_Logo",
+		"applink":"Placeholder_LogoLink",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\PlaceholderModule.json",
+		"scale": [4,4],
+		"zAdd":0,
+		"position":[ 0, -120]
+	},
+	{
+		"name":"NewGame_Button",
+		"applink":"NewGame_ButtonLink",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\ButtonModule.json",
+		"scale": [1,1],
+		"zAdd":0,
+		"position":[ 0, 60],
+		"textApplink":"NEW_GAME_ID"
+	},
+	{
+		"name":"Continue_Button",
+		"applink":"Continue_ButtonLink",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\ButtonModule.json",
+		"scale": [1,1],
+		"zAdd":0,
+		"position":[ 0, 120],
+		"textApplink":"CONTINUE_ID"
+	}
+]
+}

@@ -1,0 +1,54 @@
+{
+"name":"YesNoModule",
+"applink":"YesNoModuleLink",
+"JElements":
+[
+	{
+		"type":"JGameModule",
+		"name":"Blocker",
+		"applink":"Blocker_Link",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\BlockerModule.json",
+		"scale": [1,1],
+		"zAdd":100001,
+		"position":[ 0, 0],
+		"childs":
+		[
+			{
+				"name":"YesNoText",
+				"applink":"YesNoTextLink",
+				"font":"GUI\\Fonts\\kenvector_future.ttf",
+				"type":"JGameText",
+				"fontsize":35,
+				"origin":[0.5,0.5],
+				"position":[0,0],
+				"color":[1,0,0,1],
+				"zAdd":100002,
+				"textApplink":"PLACEHOLDER_ID"
+			},
+			{
+				"type":"JGameModule",
+				"name":"Yes_Button",
+				"applink":"Yes_ButtonLink",
+				"visible":true,
+				"modulePath": "GUI\\Modules\\ButtonModule.json",
+				"scale": [1,1],
+				"zAdd":100003,
+				"position":[ 0, 60],
+				"textApplink":"YES_ID"
+			},
+			{
+				"type":"JGameModule",
+				"name":"No_Button",
+				"applink":"No_ButtonLink",
+				"visible":true,
+				"modulePath": "GUI\\Modules\\ButtonModule.json",
+				"scale": [1,1],
+				"zAdd":100004,
+				"position":[ 0, 120],
+				"textApplink":"NO_ID"
+			}
+		]
+	}
+]
+}

@@ -1,0 +1,45 @@
+{
+"name":"BootLogo",
+"applink":"BootLogoLink",
+"JElements":
+[
+	{
+		"name":"BootLogoSprite",
+		"applink":"BootLogoSpriteLink",
+		"texture": "GUI/Images/placeholder.png",
+		"type":"JGameSprite",
+		"size":[512,512],
+		"position":[0,0],
+		"origin":[0.5,0.5],
+		"scale":[1,1]
+	},
+	{
+		"name":"BootLogoText",
+		"applink":"BootLogoTextLink",
+		"font":"GUI\\Fonts\\kenvector_future.ttf",
+		"type":"JGameText",
+		"fontsize":24,
+		"size":[512,512],
+		"origin":[0.5,0.5],
+		"position":[0,200],
+		"color":[1,0,0,1],
+		"textApplink":"COMPANY_NAME_ID",
+		"textalign":"middle",
+		"fontstyle":"normal"
+	},
+	{
+		"name":"BootLogoText",
+		"applink":"BootLogoTextLink",
+		"font":"GUI\\Fonts\\kenvector_future.ttf",
+		"type":"JGameText",
+		"fontsize":20,
+		"size":[512,512],
+		"origin":[0.5,0.5],
+		"position":[0,300],
+		"color":[1,0,0,1],
+		"textApplink":"PRESENTS_ID",
+		"textalign":"middle",
+		"fontstyle":"italic"
+	}
+]
+}

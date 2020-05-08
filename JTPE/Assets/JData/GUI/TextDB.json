@@ -1,0 +1,84 @@
+{
+	"Entries": [
+		{
+			"ID": "HELLO_ID",
+			"ENG": "Hello World",
+			"ITA": "Ciao mondo"
+		},
+		{
+			"ID": "APP_NAME_ID",
+			"ENG": "App Name",
+			"ITA": "Nome App"
+		},
+		{
+			"ID": "STEAM_MUST_RUN_ID",
+			"ENG": "Steam is not running. Start Steam and try again.",
+			"ITA": "Steam non è aperto. Esegui Steam e riprova."
+		},
+		{
+			"ID": "STEAM_USER_MUST_LOG_ID",
+			"ENG": "You are not logged on Steam. Log on Steam and try again.",
+			"ITA": "Non sei loggato su Steam. Loggati e prova di nuovo."
+		},
+		{
+			"ID": "PLAY_ID",
+			"ENG": "Play",
+			"ITA": "Gioca"
+		},
+		{
+			"ID": "COMPANY_NAME_ID",
+			"ENG": "Fabio Corrirossi",
+			"ITA": "Fabio Corrirossi"
+		},
+		{
+			"ID": "PRESENTS_ID",
+			"ENG": "presents",
+			"ITA": "presenta"
+		},
+		{
+			"ID": "BACK_ID",
+			"ENG": "Back",
+			"ITA": "Indietro"
+		},
+		{
+			"ID": "PLACEHOLDER_ID",
+			"ENG": "Placeholder",
+			"ITA": "Segnaposto"
+		},
+		{
+			"ID": "NEW_GAME_ID",
+			"ENG": "New Game",
+			"ITA": "Nuovo Gioco"
+		},
+		{
+			"ID": "CONTINUE_ID",
+			"ENG": "Continue",
+			"ITA": "Continua"
+		},
+		{
+			"ID": "YES_ID",
+			"ENG": "Yes",
+			"ITA": "Sì"
+		},
+		{
+			"ID": "OK_ID",
+			"ENG": "Ok",
+			"ITA": "Ok"
+		},
+		{
+			"ID": "NO_ID",
+			"ENG": "No",
+			"ITA": "No"
+		},
+		{
+			"ID": "NEWGAME_DESC_ID",
+			"ENG": "All your data will be lost, continue?",
+			"ITA": "Perderai tutti i tuoi dati, continuare?"
+		},
+		{
+			"ID": "BACK_TO_MAIN_ID",
+			"ENG": "Back",
+			"ITA": "Indietro"
+		}
+	]
+}

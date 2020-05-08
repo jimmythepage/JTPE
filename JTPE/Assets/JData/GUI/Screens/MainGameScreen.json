@@ -1,0 +1,16 @@
+{
+"name":"GameScreen",
+"Modules":
+[
+	{
+		"name":"BackToMain_Button",
+		"applink":"BackToMain_ButtonLink",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\ButtonModule.json",
+		"scale": [1,1],
+		"zAdd":0,
+		"position":[ 0, 60],
+		"textApplink":"BACK_TO_MAIN_ID"
+	}
+]
+}

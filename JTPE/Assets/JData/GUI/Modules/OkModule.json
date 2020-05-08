@@ -1,0 +1,43 @@
+{
+"name":"OkModule",
+"applink":"OkModuleLink",
+"JElements":
+[
+	{
+		"type":"JGameModule",
+		"name":"Blocker",
+		"applink":"Blocker_Link",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\BlockerModule.json",
+		"scale": [1,1],
+		"zAdd":100001,
+		"position":[ 0, 0],
+		"childs":
+		[
+			{
+				"name":"OkModuleText",
+				"applink":"OkModuleTextLink",
+				"font":"GUI\\Fonts\\kenvector_future.ttf",
+				"type":"JGameText",
+				"fontsize":35,
+				"origin":[0.5,0.5],
+				"position":[0,0],
+				"color":[1,0,0,1],
+				"zAdd":100002,
+				"textApplink":"PLACEHOLDER_ID"
+			},
+			{
+				"type":"JGameModule",
+				"name":"Ok_Button",
+				"applink":"Ok_ButtonLink",
+				"visible":true,
+				"modulePath": "GUI\\Modules\\ButtonModule.json",
+				"scale": [1,1],
+				"zAdd":100003,
+				"position":[ 0, 60],
+				"textApplink":"OK_ID"
+			}
+		]
+	}
+]
+}

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{975783df-f7d9-4641-b4d6-9fe17fe78898}</ItemsProjectGuid>
+    <ItemsProjectName>JTPE_Builder_Assets</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\Game\Seasons.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\BlockerModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\BootLogoModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\ButtonModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\MotivationalModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\OkModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\PlaceholderModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\PlaceholderTextModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\YesNoModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\BootScreen.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\MainGameScreen.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\MainMenuScreen.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\TextDB.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\Settings.json" />
+  </ItemGroup>
+</Project>

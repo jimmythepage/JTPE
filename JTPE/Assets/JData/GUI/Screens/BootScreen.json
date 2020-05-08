@@ -1,0 +1,14 @@
+{
+"name":"BootScreen",
+"Modules":
+[
+  {
+	"applink":"BootLogoLink",
+	"visible":true,
+    "modulePath": "GUI\\Modules\\BootLogoModule.json",
+    "scale": [1,1],
+	"zAdd":0,
+	"position":[ 0, 0]
+  }
+]
+}

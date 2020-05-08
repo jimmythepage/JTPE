@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JBase\JFile.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JBase\JFileManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JBase\JObject.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JBase\JSavingSystem.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JBase\JTextDB.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JBase\JTimer.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JCommonPch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JEngine.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameButton.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameCamera.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameDraggable.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameElement.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameLevel.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameModule.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameScreen.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameSprite.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameText.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JInput\JInputManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JInput\JInput_Keyboard.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JInput\JInput_Pointer.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JInput\Windows\JInputPointer_Win.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JInput\Windows\JInput_Keyboard_Win.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JNet\JNetManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JBody.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysicObject.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysics.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysicsManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JRenderable.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JRenderer.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JRenderManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JRendererSDL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JSpriteSDL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JTextSDL.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JTextureManagerSDL.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\SDL_FontCache.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">TurnOffAllWarnings</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TurnOffAllWarnings</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JFontManagerSFML.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JRendererSFML.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JSpriteSFML.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JTextSFML.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSFML\JTextureManagerSFML.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSprite.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JText.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JTask\JTask.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JTween\JBaseTween.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JTween\JFloatTween.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\JCommon\JBase\iJBase.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JBase.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JBaseDefines.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JFile.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JFileManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JObject.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JSavingSystem.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\json.hpp" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JTextDB.h" />
+    <ClInclude Include="..\..\..\JCommon\JBase\JTimer.h" />
+    <ClInclude Include="..\..\..\JCommon\JCommonPch.h" />
+    <ClInclude Include="..\..\..\JCommon\JEngine.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameButton.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameCamera.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameDefines.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameDraggable.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameElement.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameLevel.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameModule.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameScreen.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameSprite.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameText.h" />
+    <ClInclude Include="..\..\..\JCommon\JInput\JInputDefines.h" />
+    <ClInclude Include="..\..\..\JCommon\JInput\JInputManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JInput\JInput_Keyboard.h" />
+    <ClInclude Include="..\..\..\JCommon\JInput\JInput_Pointer.h" />
+    <ClInclude Include="..\..\..\JCommon\JInput\Windows\JInputPointer_Win.h" />
+    <ClInclude Include="..\..\..\JCommon\JInput\Windows\JInput_Keyboard_Win.h" />
+    <ClInclude Include="..\..\..\JCommon\JNet\JNetManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JBody.h" />
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysicObject.h" />
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysics.h" />
+    <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysicsManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JMaterial.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderable.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderDefines.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderer.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JRenderManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JRendererSDL.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JSpriteSDL.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JTextSDL.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JTextureManagerSDL.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\SDL_FontCache.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JFontManagerSFML.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JRendererSFML.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JSpriteSFML.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JTextSFML.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JTextureManagerSFML.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSprite.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JText.h" />
+    <ClInclude Include="..\..\..\JCommon\JTask\JTask.h" />
+    <ClInclude Include="..\..\..\JCommon\JTween\JBaseTween.h" />
+    <ClInclude Include="..\..\..\JCommon\JTween\JFloatTween.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{498CB96A-EEEB-46ED-85EB-E51E6B1B7E83}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>JCommon</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\JRender\JOGL\glew\include\GL;..\..\..\JCommon\JRender\JOGL\glew\include;..\..\..\JCommon\JRender\JOGL\glfw\include;..\..\..\JCommon\JRender\JOGL\glm\include;..\..\..\JCommon\simple2d;..\..\..\JCommon\SDL\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__WINDOWS__;_JDEBUG_;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
