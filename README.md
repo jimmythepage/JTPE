@@ -38,6 +38,7 @@ JTPE engine is an abstract layer and the current Windows implementation is based
 - JSON for Modern C++ by Niels Lohmann <http://nlohmann.me>.
 - SDL2 https://www.libsdl.org/download-2.0.php
 - FFMPEG https://www.ffmpeg.org/
+- Steamworks SDK (https://partner.steamgames.com/doc/sdk)
 
 The rights to use those libraries remain on their owners licenses.
 
