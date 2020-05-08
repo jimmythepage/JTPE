@@ -25,9 +25,9 @@ No CMake is provided. A common shared library of class is the center of the engi
 JTPE has a set Milestone to reach its alpha state once several major features will be released.
 The next big things will be:
 - video player implementation
-- BOX2D/Physics implementation
 - Simple game example uploaded
 - Extensive Wiki page updates with several examples!
+- BOX2D/Physics implementation
 
 # Contributing:
 Any help of any kind will be apprieciated, feel free to contribute and contact me for any question.
