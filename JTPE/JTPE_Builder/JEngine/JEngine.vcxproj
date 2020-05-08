@@ -19,6 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Audio.cpp" />
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioCallback.cpp" />
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Player.cpp" />
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\SDLWrapper.cpp" />
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Utils.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JFile.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JFileManager.cpp" />
@@ -43,6 +48,7 @@
     <ClCompile Include="..\..\..\JCommon\JGame\JGameScreen.cpp" />
     <ClCompile Include="..\..\..\JCommon\JGame\JGameSprite.cpp" />
     <ClCompile Include="..\..\..\JCommon\JGame\JGameText.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameVideoSprite.cpp" />
     <ClCompile Include="..\..\..\JCommon\JInput\JInputManager.cpp" />
     <ClCompile Include="..\..\..\JCommon\JInput\JInput_Keyboard.cpp" />
     <ClCompile Include="..\..\..\JCommon\JInput\JInput_Pointer.cpp" />
@@ -70,6 +76,7 @@
     </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JTextSDL.cpp" />
     <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JTextureManagerSDL.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.cpp" />
     <ClCompile Include="..\..\..\JCommon\JRender\JSDL\SDL_FontCache.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
@@ -112,11 +119,19 @@
     </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JRender\JSprite.cpp" />
     <ClCompile Include="..\..\..\JCommon\JRender\JText.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JRender\JVideoSprite.cpp" />
     <ClCompile Include="..\..\..\JCommon\JTask\JTask.cpp" />
     <ClCompile Include="..\..\..\JCommon\JTween\JBaseTween.cpp" />
     <ClCompile Include="..\..\..\JCommon\JTween\JFloatTween.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Audio.h" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioCallback.h" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioPacket.h" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\defs.h" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Player.h" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\SDLWrapper.h" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Utils.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\iJBase.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\JBase.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\JBaseDefines.h" />
@@ -140,6 +155,7 @@
     <ClInclude Include="..\..\..\JCommon\JGame\JGameScreen.h" />
     <ClInclude Include="..\..\..\JCommon\JGame\JGameSprite.h" />
     <ClInclude Include="..\..\..\JCommon\JGame\JGameText.h" />
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameVideoSprite.h" />
     <ClInclude Include="..\..\..\JCommon\JInput\JInputDefines.h" />
     <ClInclude Include="..\..\..\JCommon\JInput\JInputManager.h" />
     <ClInclude Include="..\..\..\JCommon\JInput\JInput_Keyboard.h" />
@@ -170,6 +186,7 @@
     </ClInclude>
     <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JTextSDL.h" />
     <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JTextureManagerSDL.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.h" />
     <ClInclude Include="..\..\..\JCommon\JRender\JSDL\SDL_FontCache.h" />
     <ClInclude Include="..\..\..\JCommon\JRender\JSFML\JFontManagerSFML.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -203,6 +220,7 @@
     </ClInclude>
     <ClInclude Include="..\..\..\JCommon\JRender\JSprite.h" />
     <ClInclude Include="..\..\..\JCommon\JRender\JText.h" />
+    <ClInclude Include="..\..\..\JCommon\JRender\JVideoSprite.h" />
     <ClInclude Include="..\..\..\JCommon\JTask\JTask.h" />
     <ClInclude Include="..\..\..\JCommon\JTween\JBaseTween.h" />
     <ClInclude Include="..\..\..\JCommon\JTween\JFloatTween.h" />
@@ -305,6 +323,10 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -343,6 +365,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

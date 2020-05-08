@@ -70,6 +70,13 @@ JGameElement*  JGameModule::LoadElement(json gameElement, JGameElement* parent)
 		sprite->Init(gameElement[JsonDefine::Name], gameElement[JsonDefine::AppLink], gameElement);
 		element = sprite;
 	}
+	else if (type == JsonDefine::JGameVideoSprite)
+	{
+		JGameVideoSprite* sprite = new JGameVideoSprite();
+		sprite->SetParent(parent, false);
+		sprite->Init(gameElement[JsonDefine::Name], gameElement[JsonDefine::AppLink], gameElement);
+		element = sprite;
+	}
 	else if (type == JsonDefine::JGameButton)
 	{
 		JGameButton* button = new JGameButton();

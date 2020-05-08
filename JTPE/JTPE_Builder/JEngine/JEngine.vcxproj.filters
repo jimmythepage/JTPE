@@ -34,6 +34,9 @@
     <Filter Include="JPhysics">
       <UniqueIdentifier>{14a0b92b-27ed-4a88-9682-80b20dfe3db8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JRender\JSDL\SDLVideoPlayer">
+      <UniqueIdentifier>{d5172793-b325-4adb-a3f5-7423a1ab8f6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp">
@@ -172,6 +175,30 @@
     </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysicObject.cpp">
       <Filter>JPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\SDLWrapper.cpp">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Utils.cpp">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Player.cpp">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioCallback.cpp">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Audio.cpp">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JVideoSprite.cpp">
+      <Filter>JRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.cpp">
+      <Filter>JRender\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JGame\JGameVideoSprite.cpp">
+      <Filter>JGame</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -332,6 +359,36 @@
     </ClInclude>
     <ClInclude Include="..\..\..\JCommon\JPhysics\JBody.h">
       <Filter>JPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\defs.h">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\SDLWrapper.h">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Utils.h">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Player.h">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioCallback.h">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioPacket.h">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Audio.h">
+      <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JVideoSprite.h">
+      <Filter>JRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.h">
+      <Filter>JRender\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JGame\JGameVideoSprite.h">
+      <Filter>JGame</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

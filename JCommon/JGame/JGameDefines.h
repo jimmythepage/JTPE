@@ -54,6 +54,7 @@ namespace J
 			const std::string JGameModule = "JGameModule";
 			const std::string JGameScreen = "JGameScreen";
 			const std::string JGameSprite = "JGameSprite";
+			const std::string JGameVideoSprite = "JGameVideoSprite";
 			const std::string JGameButton = "JGameButton";
 			const std::string JGameDraggable = "JGameDraggable";
 			const std::string JGameText = "JGameText";

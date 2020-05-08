@@ -13,9 +13,6 @@
     <Filter Include="GUI\Screens">
       <UniqueIdentifier>{5a424299-9dbd-4948-953f-e24b0bb31f86}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Game">
-      <UniqueIdentifier>{4a134322-f6f1-4009-b4be-5c2186a10e4d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\ButtonModule.json">
@@ -51,14 +48,14 @@
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\TextDB.json">
       <Filter>GUI</Filter>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\Game\Seasons.json">
-      <Filter>Game</Filter>
-    </None>
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\OkModule.json">
       <Filter>GUI\Modules</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\MainGameScreen.json">
       <Filter>GUI\Screens</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\VideoModule.json">
+      <Filter>GUI\Modules</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -1,5 +1,4 @@
 #include "JCommonPch.h"
-
 Audio* AudioCallback::audio_instance = 0;
 void AudioCallback::set_audio_instance(Audio* audio_instance)
 {

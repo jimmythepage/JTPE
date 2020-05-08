@@ -15,7 +15,6 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\Game\Seasons.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\BlockerModule.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\BootLogoModule.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\ButtonModule.json" />
@@ -23,6 +22,7 @@
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\OkModule.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\PlaceholderModule.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\PlaceholderTextModule.json" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\VideoModule.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Modules\YesNoModule.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\BootScreen.json" />
     <None Include="$(MSBuildThisFileDirectory)..\..\Assets\JData\GUI\Screens\MainGameScreen.json" />
