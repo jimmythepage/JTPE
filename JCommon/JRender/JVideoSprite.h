@@ -32,7 +32,10 @@ namespace J
 		private:
 			//ANIMATED SPRITE STUFF
 			bool											mIsPlaying;
+			unsigned int							mFPS;
 			bool											mLoop;
+			void											FrameTimerCallback();
+			J::BASE::JTimer						mFrameTimer;
 		};
 	}
 }

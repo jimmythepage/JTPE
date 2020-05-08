@@ -6,7 +6,7 @@ using namespace J::RENDER;
 using namespace J::GAME;
 
 JVideoSprite::JVideoSprite(): 
-mLoop(false), mIsPlaying(false)
+mLoop(false), mIsPlaying(false), mFPS(0)
 {
 	if (!mRenderable)
 	{
@@ -42,6 +42,13 @@ void JVideoSprite::Init(const std::string filepath, const std::string name, JRen
 {
 	Init(name);
 	mRenderable->Init(filepath, name + " renderable", properties);
+	mFrameTimer.Init(name + " anim timer");
+	mFPS = 30;
+	mLoop = true;
+	float timeSpeed = 1.f / mFPS * 1000;
+	mFrameTimer.SetTime((long long)timeSpeed);
+	mFrameTimer.SetCallback(std::bind(&JVideoSprite::FrameTimerCallback, this));
+	mFrameTimer.StartTimer(true, true);
 }
 void JVideoSprite::Init(const std::string name)
 {
@@ -51,6 +58,7 @@ void JVideoSprite::Clear()
 {
 	JBase::Clear();
 	Deactivate();
+	mFrameTimer.Clear();
 	mRenderable->Clear();
 }
 void JVideoSprite::Activate()
@@ -63,13 +71,21 @@ void JVideoSprite::Activate()
 		PlayVideo();
 	}
 }
+void JVideoSprite::FrameTimerCallback()
+{
+#if defined(__SDL__)
+	((JVideoSpriteSDL*)mRenderable)->UpdateVideoFrame();
+#endif
+}
 void JVideoSprite::Update()
 {
 	JBase::Update();
+	mFrameTimer.Update();
 }
 void JVideoSprite::Deactivate()
 {
 	JBase::Deactivate();
 	gJRenderManager.GetRenderer()->RemoveRenderable(mRenderable);
 	mRenderable->Deactivate();
+	mFrameTimer.StopTimer();
 }

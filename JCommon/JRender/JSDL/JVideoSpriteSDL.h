@@ -19,10 +19,32 @@ namespace J
 			virtual void Activate();
 			virtual void Deactivate();
 
+			void				UpdateVideoFrame();
+
 		protected:
-			SDL_Surface *	mImage;
-			SDL_Texture *	mTexture;
-			SDL_Renderer*	mRenderer;
+			SDL_Texture *				mTexture;
+			SDL_Renderer*				mRenderer;
+
+			AVFormatContext*		mFormatCtx;
+			AVCodecParameters*	mCodecParameters;
+			AVCodecParameters*	mCodecAudioParameters;
+			AVCodec*						mCodec;
+			AVCodec*						mAudioCodec;
+			AVFrame*						mFrame;
+			AVFrame*						mFrameRGB;
+			AVCodecContext*			mCodecCtx;
+			AVCodecContext*			mCodecAudioCtx;
+			int									mVideoStream ;
+			int									mAudioStream;
+			uint8_t*						mBuffer;
+
+			bool								mUpdateVideoFrame;
+
+		private:
+			int		GetVideoStream();
+			int		ReadAudioVideoCodec();
+			void	DisplayException(const char * message);
+			void	Display_ffmpeg_exception(int error_code);
 		};
 	}
 }

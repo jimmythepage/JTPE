@@ -22,6 +22,7 @@ void JRendererSDL::Init(const std::string name, const std::string appName)
 	{
 		style = style | SDL_WINDOW_FULLSCREEN;
 	}
+	style = style | SDL_WINDOW_OPENGL;
 	if (!mWindow)
 	{
 		mWindow = SDL_CreateWindow(appName.c_str(),
