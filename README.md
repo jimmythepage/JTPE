@@ -12,6 +12,7 @@ JTPE is currently composed by several modules:
 - Abstract Input manager
 - Game save/load system
 - GUI, (Animated) sprites, game levels JSON scripting.
+- video player (currently using ffmpeg)
 
 The GUI module is made to easily load complex screens composed by re-usable JSON modules.
 
@@ -24,7 +25,6 @@ No CMake is provided. A common shared library of class is the center of the engi
 # Roadmap:
 JTPE has a set Milestone to reach its alpha state once several major features will be released.
 The next big things will be:
-- video player implementation
 - Simple game example uploaded
 - Extensive Wiki page updates with several examples!
 - BOX2D/Physics implementation
