@@ -8,7 +8,7 @@ This engine is designed for coders who wants a starting point to create 2D apps 
 JTPE is currently composed by several modules:
 - File managemer, including crypted/decrytped loadings
 - Easy task/thread manager
-- Abstract 2D rendering
+- Abstract 2D rendering with logic scale rendering
 - Abstract Input manager
 - Game save/load system
 - GUI, (Animated) sprites, game levels JSON scripting.
