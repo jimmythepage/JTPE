@@ -65,12 +65,6 @@ extern "C"
 }
 //FFMPEG PLAYER
 #include "ffmpeg/VideoPlayer/defs.h"
-#include "ffmpeg/VideoPlayer/Utils.h"
-#include "ffmpeg/VideoPlayer/SDLWrapper.h"
-#include "ffmpeg/VideoPlayer/AudioPacket.h"
-#include "ffmpeg/VideoPlayer/Audio.h"
-#include "ffmpeg/VideoPlayer/AudioCallback.h"
-#include "ffmpeg/VideoPlayer/Player.h"
 
 //JBASE
 #include "JBase/JBaseDefines.h"

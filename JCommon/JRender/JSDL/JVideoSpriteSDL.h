@@ -19,8 +19,9 @@ namespace J
 			virtual void Activate();
 			virtual void Deactivate();
 
-			void				UpdateVideoFrame();
-
+			virtual void				UpdateVideoFrame();
+			virtual void				RestartVideo();
+			virtual void				SetLoop(bool loop) { mLoop = loop; }
 		protected:
 			SDL_Texture *				mTexture;
 			SDL_Renderer*				mRenderer;
@@ -37,8 +38,10 @@ namespace J
 			int									mVideoStream ;
 			int									mAudioStream;
 			uint8_t*						mBuffer;
+			int									mPreviousFrameNumber;
 
 			bool								mUpdateVideoFrame;
+			bool								mLoop;
 
 		private:
 			int		GetVideoStream();

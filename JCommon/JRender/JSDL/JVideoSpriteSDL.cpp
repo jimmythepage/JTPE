@@ -10,7 +10,8 @@ JVideoSpriteSDL::JVideoSpriteSDL():mTexture(NULL),mRenderer(NULL),
 	mCodec(NULL),mAudioCodec(NULL),mFrame(NULL),mFrameRGB(NULL),
 	mCodecCtx(NULL),mCodecAudioCtx(NULL),
 	mVideoStream(0), mAudioStream(0),
-	mBuffer(NULL), mUpdateVideoFrame(false)
+	mBuffer(NULL), mUpdateVideoFrame(false), mPreviousFrameNumber(0),
+	mLoop(true)
 {
 }
 JVideoSpriteSDL::~JVideoSpriteSDL()
@@ -18,7 +19,7 @@ JVideoSpriteSDL::~JVideoSpriteSDL()
 }
 void JVideoSpriteSDL::DisplayException(const char * message)
 {
-	Player::get_instance()->clear();
+	Clear();
 	throw std::runtime_error(message);
 }
 void JVideoSpriteSDL::Display_ffmpeg_exception(int error_code)
@@ -63,7 +64,7 @@ void JVideoSpriteSDL::Init(const std::string filepath, const std::string name)
 	// open
 	ReadAudioVideoCodec();
 
-	Audio::get_instance()->malloc(mCodecAudioCtx);
+	//Audio::get_instance()->malloc(mCodecAudioCtx);
 
 	//Audio::get_instance()->open();
 
@@ -85,6 +86,7 @@ void JVideoSpriteSDL::Init(const std::string filepath, const std::string name)
 
 	mRenderer = static_cast<JRendererSDL*>(gJRenderManager.GetRenderer())->GetRenderer();
 	mTexture = SDL_CreateTexture(mRenderer, SDL_PIXELFORMAT_YV12, SDL_TEXTUREACCESS_STATIC, mCodecCtx->width, mCodecCtx->height);
+	mPreviousFrameNumber = 0;
 }
 int JVideoSpriteSDL::ReadAudioVideoCodec()
 {
@@ -207,6 +209,12 @@ void JVideoSpriteSDL::UpdateVideoFrame()
 {
 	mUpdateVideoFrame = true;
 }
+void JVideoSpriteSDL::RestartVideo()
+{
+	auto stream = mFormatCtx->streams[mVideoStream];
+	avio_seek(mFormatCtx->pb, 0, SEEK_SET);
+	avformat_seek_file(mFormatCtx, mVideoStream, 0, 0, stream->duration, 0);
+}
 void JVideoSpriteSDL::Update()
 {
 	JRenderable::Update();
@@ -221,8 +229,6 @@ void JVideoSpriteSDL::Update()
 		(int)width, (int)height
 	};
 
-	SDL_Rect clip = { (int)GetSpriteClip().Position.x, (int)GetSpriteClip().Position.y, (int)GetSpriteClip().Size.x, (int)GetSpriteClip().Size.y };
-
 	SDL_SetTextureBlendMode(mTexture, SDL_BLENDMODE_BLEND);
 	SDL_SetTextureAlphaMod(mTexture, (Uint8)(255 * GetProperties().A));
 	SDL_SetTextureColorMod(mTexture, (Uint8)(255 * GetProperties().R),
@@ -235,11 +241,27 @@ void JVideoSpriteSDL::Update()
 	{
 		if (mUpdateVideoFrame)
 		{
-			mUpdateVideoFrame = false;
 			AVPacket packet;
-
-			if (av_read_frame(mFormatCtx, &packet) >= 0)
+			int result = av_read_frame(mFormatCtx, &packet);
+			if (result == AVERROR_EOF)
 			{
+				if (mLoop)//Reset video
+				{
+					auto stream = mFormatCtx->streams[mVideoStream];
+					avio_seek(mFormatCtx->pb, 0, SEEK_SET);
+					avformat_seek_file(mFormatCtx, mVideoStream, 0, 0, stream->duration, 0);
+				}
+			}
+			else if (result >= 0)
+			{
+				if (mPreviousFrameNumber != mCodecCtx->frame_number)
+				{
+					//This is to recalculate frames when frame_number is retaining
+					//TODO improve frame rate quality
+					mUpdateVideoFrame = false;
+					mPreviousFrameNumber = mCodecCtx->frame_number;
+				}
+				
 				/*if (packet.stream_index == mAudioStream)
 				{
 					Audio::get_instance()->put_audio_packet(&packet);
@@ -254,23 +276,17 @@ void JVideoSpriteSDL::Update()
 
 					res = avcodec_receive_frame(mCodecCtx, mFrame);
 
-					SDL_UpdateYUVTexture(mTexture, NULL, mFrame->data[0], mFrame->linesize[0],
+					SDL_UpdateYUVTexture(mTexture, NULL, 
+						mFrame->data[0], mFrame->linesize[0],
 						mFrame->data[1], mFrame->linesize[1],
 						mFrame->data[2], mFrame->linesize[2]);
 				}
 			}
 			av_packet_unref(&packet);
 		}
-		//SDL_RenderCopy(mRenderer, mTexture, NULL, NULL);
-		SDL_RenderCopyEx(mRenderer, mTexture, &clip, &transform, GetProperties().Rot, &Origin, SDL_FLIP_NONE);
+		SDL_RenderCopyEx(mRenderer, mTexture, NULL, &transform, GetProperties().Rot, &Origin, SDL_FLIP_NONE);
 		//TODO
-		//- Clipping into texture
-		//- Timing (timers seems wrong)
-		//- Audio not loading
-		//- Audio not cleaning
-		//- Import parameter from JSON (fps, loop)
-		//- Setup controls (PlayVideo, ResumeVideo, StopVideo)
-		//
+		//- Implement Audio
 	}
 }
 void JVideoSpriteSDL::Deactivate()

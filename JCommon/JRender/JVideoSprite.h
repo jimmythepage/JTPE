@@ -24,9 +24,11 @@ namespace J
 			virtual void			PlayVideo();
 			virtual void			PauseVideo();
 			virtual void			StopVideo();
-			virtual void			SetLoop(bool loop) { mLoop = loop; }
+			virtual void			SetLoop(bool loop);
+			virtual void			SetFPS(unsigned int fps) { mFPS = fps; }
 
 			virtual bool			GetLoop() { return mLoop; }
+			virtual unsigned int GetFPS() { return mFPS; }
 		protected:
 			JRenderable*					mRenderable;
 		private:

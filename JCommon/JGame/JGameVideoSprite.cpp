@@ -28,6 +28,11 @@ void JGameVideoSprite::Init(const std::string name, std::string applink, json sp
 	{
 		mSprite->SetLoop(sprite[JsonDefine::Loop]);
 	}
+	if (!sprite[JsonDefine::FPS].is_null())
+	{
+		mSprite->SetFPS(sprite[JsonDefine::FPS]);
+	}
+	mSprite->PlayVideo();
 	if (!mPhysicsObject)
 	{
 		mPhysicsObject = new PHYSICS::JPhysicObject();

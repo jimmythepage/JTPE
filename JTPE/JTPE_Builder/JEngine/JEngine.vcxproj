@@ -19,11 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Audio.cpp" />
-    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioCallback.cpp" />
-    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Player.cpp" />
-    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\SDLWrapper.cpp" />
-    <ClCompile Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Utils.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JFile.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JFileManager.cpp" />
@@ -125,13 +120,7 @@
     <ClCompile Include="..\..\..\JCommon\JTween\JFloatTween.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Audio.h" />
-    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioCallback.h" />
-    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\AudioPacket.h" />
     <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\defs.h" />
-    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Player.h" />
-    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\SDLWrapper.h" />
-    <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\Utils.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\iJBase.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\JBase.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\JBaseDefines.h" />
@@ -314,7 +303,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>__WINDOWS__;_JDEBUG_;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -356,8 +345,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

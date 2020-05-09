@@ -26,16 +26,32 @@ JVideoSprite::~JVideoSprite()
 	delete mRenderable;
 	mRenderable = NULL;
 }
+void JVideoSprite::SetLoop(bool loop)
+{ 
+	mLoop = loop; 
+#if defined(__SDL__)
+	((JVideoSpriteSDL*)mRenderable)->SetLoop(mLoop);
+#endif
+}
 void JVideoSprite::PlayVideo()
 {
+	float timeSpeed = 1.f / mFPS * 1000;
+	mFrameTimer.SetTime((long long)timeSpeed);
+	mFrameTimer.SetCallback(std::bind(&JVideoSprite::FrameTimerCallback, this));
+	mFrameTimer.StartTimer(true, true);
 	mIsPlaying = true;
 }
 void JVideoSprite::PauseVideo()
 {
+	mFrameTimer.StopTimer();
 	mIsPlaying = false;
 }
 void JVideoSprite::StopVideo()
 {
+	mFrameTimer.StopTimer();
+#if defined(__SDL__)
+	((JVideoSpriteSDL*)mRenderable)->RestartVideo();
+#endif
 	mIsPlaying = false;
 }
 void JVideoSprite::Init(const std::string filepath, const std::string name, JRenderableProperties properties)
@@ -43,12 +59,6 @@ void JVideoSprite::Init(const std::string filepath, const std::string name, JRen
 	Init(name);
 	mRenderable->Init(filepath, name + " renderable", properties);
 	mFrameTimer.Init(name + " anim timer");
-	mFPS = 30;
-	mLoop = true;
-	float timeSpeed = 1.f / mFPS * 1000;
-	mFrameTimer.SetTime((long long)timeSpeed);
-	mFrameTimer.SetCallback(std::bind(&JVideoSprite::FrameTimerCallback, this));
-	mFrameTimer.StartTimer(true, true);
 }
 void JVideoSprite::Init(const std::string name)
 {
