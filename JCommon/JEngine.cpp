@@ -43,6 +43,7 @@ void JEngine::Init(const std::string name, const std::string absBasePath, const 
 	gJSavingSystem.Init("JSavingSystem");
 	gJRenderManager.Init("JRenderManager", name);
 	gJInputManager.Init("JInputManager");
+	gJAudioManager.Init("JAudioManager");
 	NET::NET_PROVIDER provider = NET::NET_PROVIDER::NONE;
 	if ((options & USES_BLOB) > 0)
 	{
@@ -67,11 +68,7 @@ void JEngine::Update()
 	gJPhysicsManager.Update();
 	gJSavingSystem.Update();
 	gJRenderManager.Update();
-	//TEMPORARY
-	if (gJInputManager.GetInputKeyboard()->GetKeyPressed(Key_Escape))
-	{
-		StopEngine();
-	}
+	gJAudioManager.Update();
 }
 void JEngine::StopEngine()
 {
@@ -96,6 +93,7 @@ void JEngine::Clear()
 	gJGameManager.Clear();
 	gJNetManager.Clear();
 	gJInputManager.Clear();
+	gJAudioManager.Clear();
 	gJRenderManager.Clear();
 	gJSavingSystem.Clear();
 	gJFileManager.Clear();
@@ -114,6 +112,7 @@ void JEngine::Activate()
 	gJGameManager.Activate();
 	gJPhysicsManager.Activate();
 	gJRenderManager.Activate();
+	gJAudioManager.Activate();
 }
 void JEngine::Deactivate()
 {
@@ -123,6 +122,7 @@ void JEngine::Deactivate()
 	gJGameManager.Deactivate();
 	gJPhysicsManager.Deactivate();
 	gJNetManager.Deactivate();
+	gJAudioManager.Deactivate();
 	gJRenderManager.Deactivate();
 	gJSavingSystem.Deactivate();
 	gJFileManager.Deactivate();

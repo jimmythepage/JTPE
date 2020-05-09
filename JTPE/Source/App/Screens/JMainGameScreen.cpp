@@ -20,6 +20,9 @@ void JMainGameScreen::Init()
 
 	auto backToMainCallback = std::bind(&JMainGameScreen::BackToMainCallback, this, std::placeholders::_1, std::placeholders::_2);
 	static_cast<JGameButton*>(GetGameModule("BackToMain_ButtonLink")->GetElement("ButtonLink"))->AddOnReleased(this, backToMainCallback, NULL);
+
+	mBGMusic.Init("BGGameMusic", "Audio\\sample.wav");
+	mBGMusic.Play();
 }
 void  JMainGameScreen::GoBackToMainMenu()
 {
@@ -35,10 +38,12 @@ void JMainGameScreen::BackToMainCallback(JGameButton* caller, json params)
 void JMainGameScreen::Clear()
 {
 	JGameScreen::Clear();
+	mBGMusic.Clear();
 }
 void JMainGameScreen::Update()
 {
 	JGameScreen::Update();
+	mBGMusic.Update();
 }
 void JMainGameScreen::Activate()
 {

@@ -37,6 +37,12 @@
     <Filter Include="JRender\JSDL\SDLVideoPlayer">
       <UniqueIdentifier>{d5172793-b325-4adb-a3f5-7423a1ab8f6e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JAudio">
+      <UniqueIdentifier>{8f976c0c-d852-4052-88b8-dc8a838f78e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JAudio\JSDL">
+      <UniqueIdentifier>{a7a0bb12-5161-43f4-9144-c004b09894d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp">
@@ -184,6 +190,24 @@
     </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JGame\JGameVideoSprite.cpp">
       <Filter>JGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudioManager.cpp">
+      <Filter>JAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudio.cpp">
+      <Filter>JAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JAudio\JSDL\JAudioSDL.cpp">
+      <Filter>JAudio\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudioClip.cpp">
+      <Filter>JAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JAudio\JSDL\JAudioClipSDL.cpp">
+      <Filter>JAudio\JSDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudioClipImpl.cpp">
+      <Filter>JAudio</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -356,6 +380,24 @@
     </ClInclude>
     <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\defs.h">
       <Filter>JRender\JSDL\SDLVideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudioManager.h">
+      <Filter>JAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudio.h">
+      <Filter>JAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JAudio\JSDL\JAudioSDL.h">
+      <Filter>JAudio\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudioClip.h">
+      <Filter>JAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JAudio\JSDL\JAudioClipSDL.h">
+      <Filter>JAudio\JSDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudioClipImpl.h">
+      <Filter>JAudio</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

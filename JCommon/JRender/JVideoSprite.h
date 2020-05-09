@@ -27,6 +27,7 @@ namespace J
 			virtual void			SetLoop(bool loop);
 			virtual void			SetFPS(unsigned int fps) { mFPS = fps; }
 
+			virtual bool			IsPlaying() { return mIsPlaying; }
 			virtual bool			GetLoop() { return mLoop; }
 			virtual unsigned int GetFPS() { return mFPS; }
 		protected:

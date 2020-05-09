@@ -6,7 +6,7 @@
 	{
 		"name":"VideoSpriteExample",
 		"applink":"VideoSpriteExampleLink",
-		"texture": "Video/small.mp4",
+		"texture": "Video/large.mp4",
 		"type":"JGameVideoSprite",
 		"size":[560,320],
 		"position":[0,-50],

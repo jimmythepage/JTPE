@@ -21,6 +21,7 @@ namespace J
 			void GoBackToMainMenu();
 			void BackToMainCallback(JGameButton* caller, json params);
 
+			::J::AUDIO::JAudioClip mBGMusic;
 		private:
 		};
 	}

@@ -19,6 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudio.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudioClip.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudioClipImpl.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JAudio\JAudioManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JAudio\JSDL\JAudioClipSDL.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JAudio\JSDL\JAudioSDL.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JFile.cpp" />
     <ClCompile Include="..\..\..\JCommon\JBase\JFileManager.cpp" />
@@ -121,6 +127,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\defs.h" />
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudio.h" />
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudioClip.h" />
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudioClipImpl.h" />
+    <ClInclude Include="..\..\..\JCommon\JAudio\JAudioManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JAudio\JSDL\JAudioClipSDL.h" />
+    <ClInclude Include="..\..\..\JCommon\JAudio\JSDL\JAudioSDL.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\iJBase.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\JBase.h" />
     <ClInclude Include="..\..\..\JCommon\JBase\JBaseDefines.h" />

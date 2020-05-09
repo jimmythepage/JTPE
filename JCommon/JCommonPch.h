@@ -88,6 +88,10 @@ extern "C"
 #include "JRender/JSprite.h"
 #include "JRender/JVideoSprite.h"
 #include "JRender/JText.h"
+//JAUDIO
+#include "JAudio/JAudio.h"
+#include "JAudio/JAudioClip.h"
+#include "JAudio/JAudioClipImpl.h"
 //JGame
 #include "JGame/JGameDefines.h"
 #include "JGame/JGameElement.h"
@@ -108,6 +112,7 @@ extern "C"
 //JMANAGERS
 #include "JEngine.h"
 #include "JRender/JRenderManager.h"
+#include "JAudio/JAudioManager.h"
 #include "JInput/JInputManager.h"
 #include "JBase/JFileManager.h"
 #include "JBase/JSavingSystem.h"
@@ -132,6 +137,8 @@ extern "C"
 	#include "JRender/JSDL/JSpriteSDL.h"
 	#include "JRender/JSDL/JVideoSpriteSDL.h"
 	#include "JRender/JSDL/JTextSDL.h"
+	#include "JAudio/JSDL/JAudioSDL.h"
+	#include "JAudio/JSDL/JAudioClipSDL.h"
 	#endif
 #endif
 
