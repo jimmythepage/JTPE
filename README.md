@@ -44,6 +44,7 @@ JTPE engine is an abstract layer and the current Windows implementation is based
 - SDL_mixer https://www.libsdl.org/projects/SDL_mixer/
 
 The rights to use those libraries remain on their owners licenses.
+My goal is to use implementation using only GNU/MIT or other popular OpenSource libraries, to keep JTPE really free to use.
 
 # License:
 JTPE is under the MIT license (see License file).
