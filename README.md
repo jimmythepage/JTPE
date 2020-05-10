@@ -26,6 +26,7 @@ No CMake is provided. A common shared library of class is the center of the engi
 # Roadmap:
 JTPE has a set Milestone to reach its alpha state once several major features will be released.
 The next big things will be:
+- Particle integration
 - Simple game example uploaded
 - Extensive Wiki page updates with several examples!
 - BOX2D/Physics implementation
