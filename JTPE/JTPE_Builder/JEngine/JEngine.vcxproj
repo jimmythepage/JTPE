@@ -315,7 +315,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>__WINDOWS__;_JDEBUG_;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -325,8 +325,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -357,7 +357,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
@@ -368,8 +368,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

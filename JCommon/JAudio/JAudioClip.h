@@ -26,6 +26,9 @@ namespace J
 			virtual void			SetLoop(bool loop);
 			virtual bool			GetLoop();
 			virtual bool			IsPlaying();
+
+			virtual void			SetVolume(int volume);
+			virtual int				GetVolume();
 		protected:
 			JAudioClipImpl*						mAudioClipImpl;
 		};

@@ -36,6 +36,14 @@ void JAudioClip::Clear()
 		mAudioClipImpl = NULL;
 	}
 }
+int JAudioClip::GetVolume()
+{
+	return mAudioClipImpl->GetVolume();
+}
+void  JAudioClip::SetVolume(int volume)
+{
+	mAudioClipImpl->SetVolume(volume);
+}
 void JAudioClip::SetLoop(bool loop)
 {
 	mAudioClipImpl->SetLoop(loop);

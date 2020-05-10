@@ -13,6 +13,7 @@ JTPE is currently composed by several modules:
 - Game save/load system
 - GUI, (Animated) sprites, game levels JSON scripting.
 - video player (currently using ffmpeg)
+- audio player with 16 channels
 
 The GUI module is made to easily load complex screens composed by re-usable JSON modules.
 
@@ -39,6 +40,7 @@ JTPE engine is an abstract layer and the current Windows implementation is based
 - SDL2 https://www.libsdl.org/download-2.0.php
 - FFMPEG https://www.ffmpeg.org/
 - Steamworks SDK (https://partner.steamgames.com/doc/sdk)
+- SDL_mixer https://www.libsdl.org/projects/SDL_mixer/
 
 The rights to use those libraries remain on their owners licenses.
 

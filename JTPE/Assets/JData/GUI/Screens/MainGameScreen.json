@@ -13,6 +13,26 @@
 		"textApplink":"BACK_TO_MAIN_ID"
 	},
 	{
+		"name":"PlayResume_Button",
+		"applink":"PlayResume_ButtonLink",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\ButtonModule.json",
+		"scale": [1,1],
+		"zAdd":1,
+		"position":[ 0, 120],
+		"textApplink":"PLAY_SOUND_ID"
+	},
+	{
+		"name":"Stop_Button",
+		"applink":"Stop_ButtonLink",
+		"visible":true,
+		"modulePath": "GUI\\Modules\\ButtonModule.json",
+		"scale": [1,1],
+		"zAdd":1,
+		"position":[ 0, 180],
+		"textApplink":"STOP_SOUND_ID"
+	},
+	{
 		"name":"VideoModule_InGame",
 		"applink":"VideoModule_InGame_Link",
 		"visible":true,

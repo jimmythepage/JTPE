@@ -47,6 +47,7 @@ using json = nlohmann::json;
 #include <SDL_syswm.h>
 #include <SDL_render.h>
 #include <SDL_audio.h>
+#include <SDL_mixer.h>
 #endif
 //FFMPEG
 extern "C"

@@ -11,57 +11,27 @@ JAudioClipSDL::~JAudioClipSDL()
 }
 void  JAudioClipSDL::Init(const std::string name, const std::string filepath)
 {
+	JAudioClipImpl::Init(name, filepath);
 	mFilePath = filepath;
 	Init(name);
-}
-static void forwardCallback(void *userdata, Uint8 *stream, int len)
-{
-	static_cast<JAudioClipSDL*>(userdata)->OnCallback(stream, len);
-}
-void  JAudioClipSDL::OnCallback(Uint8 *stream, int len)
-{
-	if (mAudioLen == 0)
-		return;
-
-	len = ((unsigned int)len > mAudioLen ? mAudioLen : len);
-	//SDL_memcpy (stream, audio_pos, len); 					// simply copy from one buffer into the other
-	SDL_MixAudio(stream, mAudioPos, len, SDL_MIX_MAXVOLUME);// mix from one buffer into another
-
-	mAudioPos += len;
-	mAudioLen -= len;
 }
 void JAudioClipSDL::Init(const std::string name)
 {
 	JAudioClipImpl::Init(name);
-	// local variables
-	Uint32 wav_length; // length of our sample
-	Uint8 *wav_buffer; // buffer containing our audio file
-	SDL_AudioSpec wav_spec; // the specs of our piece of music
-	/* Load the WAV */
+	// Load waveforms
 	std::string path = gJEngine.GetSettings()->DataFolder;
 	path += mFilePath;
-	// the specs, length and buffer of our wav are filled
-	if (SDL_LoadWAV(path.c_str(), &wav_spec, &wav_buffer, &wav_length) == NULL)
+	_clipSample = Mix_LoadWAV(path.c_str());
+	if (_clipSample == NULL)
 	{
-		return;
-	}
-	// set the callback function
-	wav_spec.callback = forwardCallback;
-	wav_spec.userdata = this;
-	// set our global static variables
-	mAudioPos = wav_buffer; // copy sound buffer
-	mAudioLen = wav_length; // copy file length
-	/* Open the audio device */
-	if (SDL_OpenAudio(&wav_spec, NULL) < 0) 
-	{
-		LOG_WARNING(0, "Couldn't open audio: %s\n", SDL_GetError());
+		LOG_INFO(0, "Unable to load wave file: %s\n", path.c_str());
 	}
 }
 void JAudioClipSDL::Clear()
 {
 	JAudioClipImpl::Clear();
 	Stop();
-	SDL_CloseAudio();
+	Mix_FreeChunk(_clipSample);
 }
 void JAudioClipSDL::Update()
 {
@@ -70,15 +40,33 @@ void JAudioClipSDL::Update()
 void JAudioClipSDL::Play()
 {
 	JAudioClipImpl::Play();
-	SDL_PauseAudio(0);
+	if (!Mix_Paused(mChannel))
+	{
+		Mix_PlayChannel(mChannel, _clipSample, mLoop ? -1 : 0);
+	}
+	else
+	{
+		Mix_Resume(mChannel);
+	}
 }
 void JAudioClipSDL::Pause()
 {
 	JAudioClipImpl::Pause();
+	Mix_Pause(mChannel);
 }
 void JAudioClipSDL::Stop()
 {
 	JAudioClipImpl::Stop();
+	Mix_HaltChannel(mChannel);
+}
+void JAudioClipSDL::SetVolume(int volume)
+{
+	JAudioClipImpl::SetVolume(volume);
+	Mix_Volume(mChannel, volume);
+}
+int JAudioClipSDL::GetVolume()
+{
+	return JAudioClipImpl::GetVolume();
 }
 void JAudioClipSDL::Activate()
 {

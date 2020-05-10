@@ -20,9 +20,12 @@ namespace J
 		protected:
 			void GoBackToMainMenu();
 			void BackToMainCallback(JGameButton* caller, json params);
+			void PlayResumeAudioClip(JGameButton* caller, json params);
+			void StopAudioClip(JGameButton* caller, json params);
 
 			::J::AUDIO::JAudioClip mBGMusic;
 		private:
+			TWEEN::JFloatTween  mVolumeFadeIn;
 		};
 	}
 }

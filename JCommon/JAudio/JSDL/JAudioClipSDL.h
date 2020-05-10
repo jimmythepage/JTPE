@@ -22,12 +22,11 @@ namespace J
 			virtual void Pause();
 			virtual void Stop();
 
-			void OnCallback(Uint8 *stream, int len);
+			virtual void			SetVolume(int volume);
+			virtual int				GetVolume();
 
 		protected:
-			SDL_AudioDeviceID		mAudioDevice;
-			Uint8 *mAudioPos; // global pointer to the audio buffer to be played
-			Uint32 mAudioLen; // remaining length of the sample we have to play
+			Mix_Chunk* _clipSample;
 		};
 	}
 }

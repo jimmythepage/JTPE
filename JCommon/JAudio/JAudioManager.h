@@ -5,6 +5,7 @@ namespace J
 {
 	namespace AUDIO
 	{
+		const static int MAX_CHANNELS = 16;
 		class JAudioManager : public ::J::BASE::JBase
 		{
 		public:
@@ -22,9 +23,13 @@ namespace J
 			void Activate();
 			void Deactivate();
 
+			int  GetFreeAudioChannel();
+			void ReleaseAudioChannel(int channel);
+
 			JAudio* const  GetAudio() { return mAudio; }
 		private:
 			JAudio *			mAudio;
+			bool					mAudioChannelsPairs[MAX_CHANNELS];
 		};
 #define gJAudioManager ::J::AUDIO::JAudioManager::GetSingleton()
 	}
