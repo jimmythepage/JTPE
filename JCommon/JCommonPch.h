@@ -8,6 +8,8 @@
 
 //#define __STEAM__
 
+#define		__LIBCURL__
+
 //COMMON LIBRARIES
 #include <stdio.h>
 #include <stdlib.h>
@@ -109,6 +111,8 @@ extern "C"
 #include "JPhysics/JPhysics.h"
 #include "JPhysics/JBody.h"
 #include "JPhysics/JPhysicObject.h"
+//JNET
+#include "JNet/JRequest.h"
 
 //JMANAGERS
 #include "JEngine.h"
@@ -155,5 +159,11 @@ extern "C"
 #define Steamworks_SelfCheck()
 #endif
 #endif 
+
+#ifdef __LIBCURL__
+#include <curlpp/cURLpp.hpp>
+#include <curlpp/Easy.hpp>
+#include <curlpp/Options.hpp>
+#endif
 
 #endif // !JCOMMONPCH

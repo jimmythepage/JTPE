@@ -111,74 +111,75 @@ $(document).ready(function(){initNavTree('_j_renderer_s_d_l_8cpp_source.html',''
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        style = style | SDL_WINDOW_FULLSCREEN;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> (!mWindow)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        mWindow = SDL_CreateWindow(appName.c_str(),</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            100, 100, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#aa7d890de1e5a7c50a1f82e4d818c86cc">mScreenWidth</a>, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a02487c31d01dbad3c8092d62dc1b3d73">mScreenHeight</a>, style);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        mRenderer= SDL_CreateRenderer(mWindow, -1, 0);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    SDL_RenderSetLogicalSize(mRenderer, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a1aac9a183335ab6b33c67274d09f3871">mLogicalWidth</a>, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a3aab43cb9ef26b80cfc30459e54c7eee">mLogicalHeight</a>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="_j_texture_manager_s_d_l_8h.html#afff3cd24139bf6cb24d65cd6bfe32c70">gJTextureManagerSDL</a>.Init(<span class="stringliteral">&quot;Texture Manager SFML&quot;</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">/*gJFontManagerSFML.Init(&quot;Font Manager SFML&quot;);*/</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3413e4ff4b0de5998c349c85c72c0f2b">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3413e4ff4b0de5998c349c85c72c0f2b">JRendererSDL::Clear</a>()</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a855cafe18e92bfae68b53ae20e2d56d3">JRenderer::Clear</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    SDL_DestroyRenderer(mRenderer);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    SDL_DestroyWindow(mWindow);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    IMG_Quit();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    SDL_Quit();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//gJFontManagerSDL.Clear();</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="_j_texture_manager_s_d_l_8h.html#afff3cd24139bf6cb24d65cd6bfe32c70">gJTextureManagerSDL</a>.Clear();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    mRenderer = NULL;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    mWindow = NULL;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a683bcce8dba931cb1ee281e732870832">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a683bcce8dba931cb1ee281e732870832">JRendererSDL::Activate</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a33ae0ec374eec2bb957f317b396d99d3">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a33ae0ec374eec2bb957f317b396d99d3">JRendererSDL::Deactivate</a>()</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3225ea1fb0eedf521cfc6ef52eb63f29">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3225ea1fb0eedf521cfc6ef52eb63f29">JRendererSDL::PreFrame</a>()</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    SDL_RenderClear(mRenderer);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    SDL_PollEvent(&amp;mEvent);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a0ca4324bd306d2ed9c8dfa62550f1f31">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a0ca4324bd306d2ed9c8dfa62550f1f31">JRendererSDL::Update</a>()</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">switch</span> (mEvent.type)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">case</span> SDL_QUIT:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="_j_engine_8h.html#a218d797ba5c7e39abb9985d7bc3ffcdc">gJEngine</a>.StopEngine();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a70c55bd03ac95ecaf1910896f5253c3d">SortRenderables</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderable.html">JRenderable</a>* renderable : <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#ab62f9d723ba90f47a627219f32f6727e">mRenderableToRender</a>)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        renderable-&gt;Update();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#aba2952404154a91db466f1013f498043">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#aba2952404154a91db466f1013f498043">JRendererSDL::PostFrame</a>()</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    SDL_RenderPresent(mRenderer);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    style = style | SDL_WINDOW_OPENGL;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (!mWindow)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        mWindow = SDL_CreateWindow(appName.c_str(),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            100, 100, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#aa7d890de1e5a7c50a1f82e4d818c86cc">mScreenWidth</a>, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a02487c31d01dbad3c8092d62dc1b3d73">mScreenHeight</a>, style);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        mRenderer= SDL_CreateRenderer(mWindow, -1, 0);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    SDL_RenderSetLogicalSize(mRenderer, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a1aac9a183335ab6b33c67274d09f3871">mLogicalWidth</a>, <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a3aab43cb9ef26b80cfc30459e54c7eee">mLogicalHeight</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="_j_texture_manager_s_d_l_8h.html#afff3cd24139bf6cb24d65cd6bfe32c70">gJTextureManagerSDL</a>.Init(<span class="stringliteral">&quot;Texture Manager SFML&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/*gJFontManagerSFML.Init(&quot;Font Manager SFML&quot;);*/</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3413e4ff4b0de5998c349c85c72c0f2b">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3413e4ff4b0de5998c349c85c72c0f2b">JRendererSDL::Clear</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a855cafe18e92bfae68b53ae20e2d56d3">JRenderer::Clear</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    SDL_DestroyRenderer(mRenderer);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    SDL_DestroyWindow(mWindow);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    IMG_Quit();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    SDL_Quit();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//gJFontManagerSDL.Clear();</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="_j_texture_manager_s_d_l_8h.html#afff3cd24139bf6cb24d65cd6bfe32c70">gJTextureManagerSDL</a>.Clear();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    mRenderer = NULL;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    mWindow = NULL;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a683bcce8dba931cb1ee281e732870832">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a683bcce8dba931cb1ee281e732870832">JRendererSDL::Activate</a>()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a33ae0ec374eec2bb957f317b396d99d3">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a33ae0ec374eec2bb957f317b396d99d3">JRendererSDL::Deactivate</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3225ea1fb0eedf521cfc6ef52eb63f29">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3225ea1fb0eedf521cfc6ef52eb63f29">JRendererSDL::PreFrame</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    SDL_RenderClear(mRenderer);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    SDL_PollEvent(&amp;mEvent);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a0ca4324bd306d2ed9c8dfa62550f1f31">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a0ca4324bd306d2ed9c8dfa62550f1f31">JRendererSDL::Update</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">switch</span> (mEvent.type)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">case</span> SDL_QUIT:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="_j_engine_8h.html#a218d797ba5c7e39abb9985d7bc3ffcdc">gJEngine</a>.StopEngine();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a70c55bd03ac95ecaf1910896f5253c3d">SortRenderables</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderable.html">JRenderable</a>* renderable : <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#ab62f9d723ba90f47a627219f32f6727e">mRenderableToRender</a>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        renderable-&gt;Update();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#aba2952404154a91db466f1013f498043">   77</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#aba2952404154a91db466f1013f498043">JRendererSDL::PostFrame</a>()</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    SDL_RenderPresent(mRenderer);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a33ae0ec374eec2bb957f317b396d99d3"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a33ae0ec374eec2bb957f317b396d99d3">J::RENDER::JRendererSDL::Deactivate</a></div><div class="ttdeci">void Deactivate()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00052">JRendererSDL.cpp:52</a></div></div>
-<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a683bcce8dba931cb1ee281e732870832"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a683bcce8dba931cb1ee281e732870832">J::RENDER::JRendererSDL::Activate</a></div><div class="ttdeci">void Activate()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00049">JRendererSDL.cpp:49</a></div></div>
-<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a3225ea1fb0eedf521cfc6ef52eb63f29"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3225ea1fb0eedf521cfc6ef52eb63f29">J::RENDER::JRendererSDL::PreFrame</a></div><div class="ttdeci">void PreFrame()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00055">JRendererSDL.cpp:55</a></div></div>
+<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a33ae0ec374eec2bb957f317b396d99d3"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a33ae0ec374eec2bb957f317b396d99d3">J::RENDER::JRendererSDL::Deactivate</a></div><div class="ttdeci">void Deactivate()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00053">JRendererSDL.cpp:53</a></div></div>
+<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a683bcce8dba931cb1ee281e732870832"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a683bcce8dba931cb1ee281e732870832">J::RENDER::JRendererSDL::Activate</a></div><div class="ttdeci">void Activate()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00050">JRendererSDL.cpp:50</a></div></div>
+<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a3225ea1fb0eedf521cfc6ef52eb63f29"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3225ea1fb0eedf521cfc6ef52eb63f29">J::RENDER::JRendererSDL::PreFrame</a></div><div class="ttdeci">void PreFrame()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00056">JRendererSDL.cpp:56</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_ab62f9d723ba90f47a627219f32f6727e"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#ab62f9d723ba90f47a627219f32f6727e">J::RENDER::JRenderer::mRenderableToRender</a></div><div class="ttdeci">std::list&lt; JRenderable * &gt; mRenderableToRender</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8h_source.html#l00036">JRenderer.h:36</a></div></div>
 <div class="ttc" id="a_j_engine_8h_html_a218d797ba5c7e39abb9985d7bc3ffcdc"><div class="ttname"><a href="_j_engine_8h.html#a218d797ba5c7e39abb9985d7bc3ffcdc">gJEngine</a></div><div class="ttdeci">#define gJEngine</div><div class="ttdef"><b>Definition:</b> <a href="_j_engine_8h_source.html#l00050">JEngine.h:49</a></div></div>
-<div class="ttc" id="anamespace_j_html"><div class="ttname"><a href="namespace_j.html">J</a></div><div class="ttdef"><b>Definition:</b> <a href="i_j_base_8h_source.html#l00004">iJBase.h:5</a></div></div>
-<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a0ca4324bd306d2ed9c8dfa62550f1f31"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a0ca4324bd306d2ed9c8dfa62550f1f31">J::RENDER::JRendererSDL::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00060">JRendererSDL.cpp:60</a></div></div>
+<div class="ttc" id="anamespace_j_html"><div class="ttname"><a href="namespace_j.html">J</a></div><div class="ttdef"><b>Definition:</b> <a href="_j_audio_8h_source.html#l00004">JAudio.h:5</a></div></div>
+<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a0ca4324bd306d2ed9c8dfa62550f1f31"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a0ca4324bd306d2ed9c8dfa62550f1f31">J::RENDER::JRendererSDL::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00061">JRendererSDL.cpp:61</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_a855cafe18e92bfae68b53ae20e2d56d3"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a855cafe18e92bfae68b53ae20e2d56d3">J::RENDER::JRenderer::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8cpp_source.html#l00028">JRenderer.cpp:28</a></div></div>
 <div class="ttc" id="anamespace_j_1_1_r_e_n_d_e_r_html"><div class="ttname"><a href="namespace_j_1_1_r_e_n_d_e_r.html">J::RENDER</a></div><div class="ttdef"><b>Definition:</b> <a href="_j2_d_quad_8h_source.html#l00006">J2DQuad.h:7</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_a02487c31d01dbad3c8092d62dc1b3d73"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a02487c31d01dbad3c8092d62dc1b3d73">J::RENDER::JRenderer::mScreenHeight</a></div><div class="ttdeci">unsigned int mScreenHeight</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8h_source.html#l00038">JRenderer.h:38</a></div></div>
-<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_aba2952404154a91db466f1013f498043"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#aba2952404154a91db466f1013f498043">J::RENDER::JRendererSDL::PostFrame</a></div><div class="ttdeci">void PostFrame()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00076">JRendererSDL.cpp:76</a></div></div>
+<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_aba2952404154a91db466f1013f498043"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#aba2952404154a91db466f1013f498043">J::RENDER::JRendererSDL::PostFrame</a></div><div class="ttdeci">void PostFrame()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00077">JRendererSDL.cpp:77</a></div></div>
 <div class="ttc" id="anamespace_j_1_1_t_a_s_k_html"><div class="ttname"><a href="namespace_j_1_1_t_a_s_k.html">J::TASK</a></div><div class="ttdef"><b>Definition:</b> <a href="_j_task_8h_source.html#l00006">JTask.h:7</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_a9ece1aaff5f6420d9d52e0f6f63c1d8d"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a9ece1aaff5f6420d9d52e0f6f63c1d8d">J::RENDER::JRenderer::Init</a></div><div class="ttdeci">virtual void Init(const std::string name, const std::string appName)</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8cpp_source.html#l00019">JRenderer.cpp:19</a></div></div>
 <div class="ttc" id="a_j_texture_manager_s_d_l_8h_html_afff3cd24139bf6cb24d65cd6bfe32c70"><div class="ttname"><a href="_j_texture_manager_s_d_l_8h.html#afff3cd24139bf6cb24d65cd6bfe32c70">gJTextureManagerSDL</a></div><div class="ttdeci">#define gJTextureManagerSDL</div><div class="ttdef"><b>Definition:</b> <a href="_j_texture_manager_s_d_l_8h_source.html#l00030">JTextureManagerSDL.h:29</a></div></div>
@@ -189,7 +190,7 @@ $(document).ready(function(){initNavTree('_j_renderer_s_d_l_8cpp_source.html',''
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_aa7d890de1e5a7c50a1f82e4d818c86cc"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#aa7d890de1e5a7c50a1f82e4d818c86cc">J::RENDER::JRenderer::mScreenWidth</a></div><div class="ttdeci">unsigned int mScreenWidth</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8h_source.html#l00038">JRenderer.h:38</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderable_html"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderable.html">J::RENDER::JRenderable</a></div><div class="ttdef"><b>Definition:</b> <a href="_j_renderable_8h_source.html#l00046">JRenderable.h:47</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_a1aac9a183335ab6b33c67274d09f3871"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a1aac9a183335ab6b33c67274d09f3871">J::RENDER::JRenderer::mLogicalWidth</a></div><div class="ttdeci">unsigned int mLogicalWidth</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8h_source.html#l00039">JRenderer.h:39</a></div></div>
-<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a3413e4ff4b0de5998c349c85c72c0f2b"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3413e4ff4b0de5998c349c85c72c0f2b">J::RENDER::JRendererSDL::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00035">JRendererSDL.cpp:35</a></div></div>
+<div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l_html_a3413e4ff4b0de5998c349c85c72c0f2b"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_s_d_l.html#a3413e4ff4b0de5998c349c85c72c0f2b">J::RENDER::JRendererSDL::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_s_d_l_8cpp_source.html#l00036">JRendererSDL.cpp:36</a></div></div>
 <div class="ttc" id="a_j_common_pch_8h_html"><div class="ttname"><a href="_j_common_pch_8h.html">JCommonPch.h</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_a3aab43cb9ef26b80cfc30459e54c7eee"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a3aab43cb9ef26b80cfc30459e54c7eee">J::RENDER::JRenderer::mLogicalHeight</a></div><div class="ttdeci">unsigned int mLogicalHeight</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8h_source.html#l00039">JRenderer.h:39</a></div></div>
 <div class="ttc" id="aclass_j_1_1_r_e_n_d_e_r_1_1_j_renderer_html_a70c55bd03ac95ecaf1910896f5253c3d"><div class="ttname"><a href="class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html#a70c55bd03ac95ecaf1910896f5253c3d">J::RENDER::JRenderer::SortRenderables</a></div><div class="ttdeci">virtual void SortRenderables()</div><div class="ttdef"><b>Definition:</b> <a href="_j_renderer_8cpp_source.html#l00049">JRenderer.cpp:49</a></div></div>

@@ -1,6 +1,7 @@
 var namespace_j =
 [
     [ "APP", "namespace_j_1_1_a_p_p.html", "namespace_j_1_1_a_p_p" ],
+    [ "AUDIO", "namespace_j_1_1_a_u_d_i_o.html", "namespace_j_1_1_a_u_d_i_o" ],
     [ "BASE", "namespace_j_1_1_b_a_s_e.html", "namespace_j_1_1_b_a_s_e" ],
     [ "ENGINE", "namespace_j_1_1_e_n_g_i_n_e.html", "namespace_j_1_1_e_n_g_i_n_e" ],
     [ "GAME", "namespace_j_1_1_g_a_m_e.html", "namespace_j_1_1_g_a_m_e" ],

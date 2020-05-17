@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['childs_1289',['Childs',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#af8a335dd497fca2cdcade53f29cfcf1b',1,'J::GAME::JsonDefine']]],
-  ['collisionmovable_1290',['CollisionMovable',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#a931e408f2b034436971894e741a0bbcc',1,'J::GAME::JsonDefine']]],
-  ['collisionnone_1291',['CollisionNone',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#a52e35df912acf87f2be0c76c14229ba1',1,'J::GAME::JsonDefine']]],
-  ['collisionstatic_1292',['CollisionStatic',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#a3fcda1f135b290a1544d1fdf98ca156f',1,'J::GAME::JsonDefine']]],
-  ['collisiontrigger_1293',['CollisionTrigger',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#abad73302a56a996d76ae8614dd4a0945',1,'J::GAME::JsonDefine']]],
-  ['collisiontype_1294',['CollisionType',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#a00ae6d439f6de665e3004d5407844be8',1,'J::GAME::JsonDefine']]],
-  ['color_1295',['Color',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#afeb056ed82bd710f54713d2f8d2487c0',1,'J::GAME::JsonDefine']]]
+  ['b_1450',['B',['../struct_j_1_1_r_e_n_d_e_r_1_1_j_renderable_properties.html#a3c561f5875d8ef3dcc423e793a853304',1,'J::RENDER::JRenderableProperties']]],
+  ['backward_1451',['Backward',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#aa4a6ba89bb3c619d3697213a252962cb',1,'J::GAME::JsonDefine']]],
+  ['bin_1452',['Bin',['../_j_file_manager_8cpp.html#a9e27032c92411a43b0b54d2f8112986c',1,'JFileManager.cpp']]],
+  ['buttonstates_1453',['ButtonStates',['../namespace_j_1_1_g_a_m_e_1_1_json_define.html#ae5e11595c28e78d92a4dedd011caab19',1,'J::GAME::JsonDefine']]]
 ];

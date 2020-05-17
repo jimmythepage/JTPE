@@ -23,5 +23,9 @@ var dir_625c7cbff7ec9d1e10aa60562f683698 =
     [ "JText.cpp", "_j_text_8cpp.html", null ],
     [ "JText.h", "_j_text_8h.html", [
       [ "JText", "class_j_1_1_r_e_n_d_e_r_1_1_j_text.html", "class_j_1_1_r_e_n_d_e_r_1_1_j_text" ]
+    ] ],
+    [ "JVideoSprite.cpp", "_j_video_sprite_8cpp.html", null ],
+    [ "JVideoSprite.h", "_j_video_sprite_8h.html", [
+      [ "JVideoSprite", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite.html", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite" ]
     ] ]
 ];

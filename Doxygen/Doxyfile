@@ -914,7 +914,9 @@ RECURSIVE              = YES
 EXCLUDE                = C:\Users\Fabio_ioTech\Documents\Fabio\JEngine_Master_GIT\JCommon\3rdParties \
                          C:\Users\Fabio_ioTech\Documents\Fabio\JEngine_Master_GIT\JCommon\JBase\json.hpp \
                          ../JCommon/JRender/JSDL/SDL_FontCache.c \
-                         ../JCommon/JRender/JSDL/SDL_FontCache.h
+                         ../JCommon/JRender/JSDL/SDL_FontCache.h \
+                         ../JCommon/3rdParties/curlpp \
+                         ../JCommon/3rdParties/libcurl
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded

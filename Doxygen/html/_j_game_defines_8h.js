@@ -35,6 +35,7 @@ var _j_game_defines_8h =
     [ "JGameScreen", "_j_game_defines_8h.html#a7099a9c7cf4d20ca8ca566392d95e38e", null ],
     [ "JGameSprite", "_j_game_defines_8h.html#a20511eb169a481cf3bbda055ffaf3ae0", null ],
     [ "JGameText", "_j_game_defines_8h.html#a3675e602d340bba69bcf20d00af8622b", null ],
+    [ "JGameVideoSprite", "_j_game_defines_8h.html#a4a8bc258a5b42e0a49697450ac47caec", null ],
     [ "LandingApplink", "_j_game_defines_8h.html#a42b99e0ccf69ba5268d2d13ff8b6d190", null ],
     [ "Loop", "_j_game_defines_8h.html#ad6ae3afb892a8e23c47292d831c7762d", null ],
     [ "ModulePath", "_j_game_defines_8h.html#af0278408b7086ebfc897d297de3816b1", null ],

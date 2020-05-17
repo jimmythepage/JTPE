@@ -32,4 +32,4 @@ namespace J
 	}
 }
 
-#endif // !JRENDERMANAGER
+#endif

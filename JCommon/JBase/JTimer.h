@@ -21,6 +21,7 @@ namespace J
 			virtual void	StopTimer();
 			virtual __int64 GetTime()			{ return mTime; }
 			virtual __int64 GetTimeToReach()	{ return mTimeToReach; }
+			virtual bool		IsFinished() { return mTime >= mTimeToReach; }
 		private:
 			virtual void Activate();
 			virtual void Deactivate();

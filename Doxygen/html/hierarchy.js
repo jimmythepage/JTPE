@@ -7,6 +7,14 @@ var hierarchy =
         [ "J::APP::GameEngine", "class_j_1_1_a_p_p_1_1_game_engine.html", null ],
         [ "J::APP::JApp", "class_j_1_1_a_p_p_1_1_j_app.html", null ],
         [ "J::APP::JSharedModules", "class_j_1_1_a_p_p_1_1_j_shared_modules.html", null ],
+        [ "J::AUDIO::JAudio", "class_j_1_1_a_u_d_i_o_1_1_j_audio.html", [
+          [ "J::AUDIO::JAudioSDL", "class_j_1_1_a_u_d_i_o_1_1_j_audio_s_d_l.html", null ]
+        ] ],
+        [ "J::AUDIO::JAudioClip", "class_j_1_1_a_u_d_i_o_1_1_j_audio_clip.html", null ],
+        [ "J::AUDIO::JAudioClipImpl", "class_j_1_1_a_u_d_i_o_1_1_j_audio_clip_impl.html", [
+          [ "J::AUDIO::JAudioClipSDL", "class_j_1_1_a_u_d_i_o_1_1_j_audio_clip_s_d_l.html", null ]
+        ] ],
+        [ "J::AUDIO::JAudioManager", "class_j_1_1_a_u_d_i_o_1_1_j_audio_manager.html", null ],
         [ "J::BASE::JFileManager", "class_j_1_1_b_a_s_e_1_1_j_file_manager.html", null ],
         [ "J::BASE::JObject", "class_j_1_1_b_a_s_e_1_1_j_object.html", null ],
         [ "J::BASE::JSavingSystem", "class_j_1_1_b_a_s_e_1_1_j_saving_system.html", null ],
@@ -29,7 +37,8 @@ var hierarchy =
             [ "J::GAME::JMainMenuScreen", "class_j_1_1_g_a_m_e_1_1_j_main_menu_screen.html", null ]
           ] ],
           [ "J::GAME::JGameSprite", "class_j_1_1_g_a_m_e_1_1_j_game_sprite.html", null ],
-          [ "J::GAME::JGameText", "class_j_1_1_g_a_m_e_1_1_j_game_text.html", null ]
+          [ "J::GAME::JGameText", "class_j_1_1_g_a_m_e_1_1_j_game_text.html", null ],
+          [ "J::GAME::JGameVideoSprite", "class_j_1_1_g_a_m_e_1_1_j_game_video_sprite.html", null ]
         ] ],
         [ "J::GAME::JGameManager", "class_j_1_1_g_a_m_e_1_1_j_game_manager.html", null ],
         [ "J::INPUT::JInputKeyboard", "class_j_1_1_i_n_p_u_t_1_1_j_input_keyboard.html", [
@@ -52,7 +61,8 @@ var hierarchy =
         [ "J::RENDER::JRenderable", "class_j_1_1_r_e_n_d_e_r_1_1_j_renderable.html", [
           [ "J::RENDER::J2DQuadOGL", "class_j_1_1_r_e_n_d_e_r_1_1_j2_d_quad_o_g_l.html", null ],
           [ "J::RENDER::JSpriteSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_sprite_s_d_l.html", null ],
-          [ "J::RENDER::JTextSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_text_s_d_l.html", null ]
+          [ "J::RENDER::JTextSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_text_s_d_l.html", null ],
+          [ "J::RENDER::JVideoSpriteSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite_s_d_l.html", null ]
         ] ],
         [ "J::RENDER::JRenderer", "class_j_1_1_r_e_n_d_e_r_1_1_j_renderer.html", [
           [ "J::RENDER::JRendererOGL", "class_j_1_1_r_e_n_d_e_r_1_1_j_renderer_o_g_l.html", null ],
@@ -62,8 +72,10 @@ var hierarchy =
         [ "J::RENDER::JSprite", "class_j_1_1_r_e_n_d_e_r_1_1_j_sprite.html", null ],
         [ "J::RENDER::JText", "class_j_1_1_r_e_n_d_e_r_1_1_j_text.html", null ],
         [ "J::RENDER::JTextureManagerSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_texture_manager_s_d_l.html", null ],
+        [ "J::RENDER::JVideoSprite", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite.html", null ],
         [ "J::TASK::JTask", "class_j_1_1_t_a_s_k_1_1_j_task.html", [
-          [ "J::BASE::JFile", "class_j_1_1_b_a_s_e_1_1_j_file.html", null ]
+          [ "J::BASE::JFile", "class_j_1_1_b_a_s_e_1_1_j_file.html", null ],
+          [ "J::NET::JRequest", "class_j_1_1_n_e_t_1_1_j_request.html", null ]
         ] ],
         [ "J::TWEEN::JBaseTween", "class_j_1_1_t_w_e_e_n_1_1_j_base_tween.html", [
           [ "J::TWEEN::JFloatTween", "class_j_1_1_t_w_e_e_n_1_1_j_float_tween.html", null ]

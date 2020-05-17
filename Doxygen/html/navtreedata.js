@@ -25,7 +25,14 @@
 var NAVTREE =
 [
   [ "JTPE", "index.html", [
-    [ "JTPE", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html", null ],
+    [ "JTPE", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html", [
+      [ "Modules and build examples:", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Installation:", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Roadmap:", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Contributing:", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "Credits:", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "License:", "md__c_1__users__fabio_io_tech__documents__fabio__j_engine__master__g_i_t__r_e_a_d_m_e.html#autotoc_md6", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -64,11 +71,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_game_engine_8cpp.html",
-"_j_input_defines_8h.html#a36b73ae442658daf3e0fb413d5d51586acf4275864acfd8cb8bfc68b565adc7f2",
-"class_j_1_1_b_a_s_e_1_1_j_file_manager.html#ae93babd4a4b136e5e870f67520bfb11e",
-"class_j_1_1_g_a_m_e_1_1_j_game_screen.html#a833ea50cff36aa3412c045cbcd6147e4",
-"class_j_1_1_r_e_n_d_e_r_1_1_j_renderable.html#a651cbeb1de06019febefa36ed623f129",
-"functions_o.html"
+"_j_game_text_8h_source.html",
+"class_j_1_1_a_u_d_i_o_1_1_j_audio.html#a3674708d64eeadc1c7c904c9dbfcb401",
+"class_j_1_1_g_a_m_e_1_1_j_game_button.html#ad4266414af435e9f98c9c02c2abf7c8b",
+"class_j_1_1_i_n_p_u_t_1_1_j_input_pointer.html#a3d92574a25da1681b92e3c750fd218e8",
+"class_j_1_1_r_e_n_d_e_r_1_1_j_sprite_s_d_l.html#a14ce7c7ab31d6cb75a823a6cd3a20619",
+"namespace_j_1_1_g_a_m_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

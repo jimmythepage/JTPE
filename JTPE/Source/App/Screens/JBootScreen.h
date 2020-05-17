@@ -24,6 +24,8 @@ namespace J
 			GAME::JGameElement*	mBootModule;
 			TWEEN::JFloatTween  mAlphaTween;
 			JOkModule*			mOkNetDialog;
+
+			J::NET::JRequest	mTestRequest;
 		};
 	}
 }

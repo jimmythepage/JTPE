@@ -8,5 +8,8 @@ var class_j_1_1_g_a_m_e_1_1_j_main_game_screen =
     [ "Deactivate", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#afd4cba74025996114b8c433f36e1eaef", null ],
     [ "GoBackToMainMenu", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#ae4299dc5fe312dc8f5d288ed795c6560", null ],
     [ "Init", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#ae3d4e63c1b0d2497ba7750a946fae352", null ],
-    [ "Update", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#afadf392216c0124c5af5983abacc2589", null ]
+    [ "PlayResumeAudioClip", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#ad03a2c11179d9a42dc3058a796ed449b", null ],
+    [ "StopAudioClip", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#a95fce08f672d98011a050a796ebdb014", null ],
+    [ "Update", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#afadf392216c0124c5af5983abacc2589", null ],
+    [ "mBGMusic", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html#a706a9ad4014eb8fe91d5418714351626", null ]
 ];

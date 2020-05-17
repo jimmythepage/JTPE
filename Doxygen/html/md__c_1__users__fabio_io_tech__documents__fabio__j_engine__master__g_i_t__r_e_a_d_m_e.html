@@ -87,7 +87,50 @@ $(document).ready(function(){initNavTree('md__c_1__users__fabio_io_tech__documen
 <div class="title">JTPE </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>2D C++ Game Engine </p>
+<div class="textblock"><p>JTPEngine is a 2D C++ Game Engine. Its goal is to provide an abstract, lightweight and cross-platform ready engine that uses only C++/std and JSON scripting. This engine is designed for coders who wants a starting point to create 2D apps and games without messing with major engines on the market.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Modules and build examples:</h1>
+<p>JTPE is currently composed by several modules:</p><ul>
+<li>File managemer, including crypted/decrytped loadings</li>
+<li>Easy task/thread manager</li>
+<li>Abstract 2D rendering with logic scale rendering</li>
+<li>Abstract Input manager</li>
+<li>Game save/load system</li>
+<li>GUI, (Animated) sprites, game levels JSON scripting.</li>
+<li>video player (currently using ffmpeg)</li>
+<li>audio player with 16 channels</li>
+<li>REST library to handle GET/POST requests easily and asynchronously</li>
+</ul>
+<p>The GUI module is made to easily load complex screens composed by re-usable JSON modules.</p>
+<p>The build example is a ready to use Windows port created for Visual Studio (2017). The engine, with the due adaption work, can be ported to any platform.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Installation:</h1>
+<p>No CMake is provided. A common shared library of class is the center of the engine and a ready to use x64 Windows implementation can be downloaded and used right away.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Roadmap:</h1>
+<p>JTPE has a set Milestone to reach its alpha state once several major features will be released. The next big things will be:</p><ul>
+<li>Particle integration</li>
+<li>Simple game example uploaded</li>
+<li>Extensive Wiki page updates with several examples!</li>
+<li>BOX2D/Physics implementation</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Contributing:</h1>
+<p>Any help of any kind will be apprieciated, feel free to contribute and contact me for any question.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Credits:</h1>
+<p>JTPE engine was developed by Fabio Corrirossi. JTPE engine is an abstract layer and the current Windows implementation is based on the following libraries:</p><ul>
+<li>JSON for Modern C++ by Niels Lohmann <a href="http://nlohmann.me">http://nlohmann.me</a>.</li>
+<li>SDL2 <a href="https://www.libsdl.org/download-2.0.php">https://www.libsdl.org/download-2.0.php</a></li>
+<li>FFMPEG <a href="https://www.ffmpeg.org/">https://www.ffmpeg.org/</a></li>
+<li>Steamworks SDK (<a href="https://partner.steamgames.com/doc/sdk">https://partner.steamgames.com/doc/sdk</a>)</li>
+<li>SDL_mixer <a href="https://www.libsdl.org/projects/SDL_mixer/">https://www.libsdl.org/projects/SDL_mixer/</a></li>
+<li>LIBCURL <a href="https://curl.haxx.se/libcurl/">https://curl.haxx.se/libcurl/</a> and CURLPP <a href="http://www.curlpp.org/">http://www.curlpp.org/</a></li>
+</ul>
+<p>The rights to use those libraries remain on their owners licenses. My goal is to use implementation using only GNU/MIT or other popular OpenSource libraries, to keep JTPE really free to use.</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+License:</h1>
+<p>JTPE is under the MIT license (see License file). So, it is really free to use/change/re-distribute as you want. Feel free to drop me a message if you want to use for any legit kind of projects. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

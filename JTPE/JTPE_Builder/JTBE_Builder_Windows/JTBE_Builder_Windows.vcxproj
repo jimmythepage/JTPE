@@ -101,7 +101,7 @@
       <PreprocessorDefinitions>__WINDOWS__;_JDEBUG_;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>JAppPch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\JCommon;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include\GL;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include;$(ProjectDir)..\..\..\JCommon\3rdParties\glfw\include;$(ProjectDir)..\..\..\JCommon\\3rdParties\glm\include;$(ProjectDir)..\..\..\JCommon\3rdParties\SDL\include;$(ProjectDir)\..\..\Source\;$(ProjectDir)\;$(ProjectDir)..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\JCommon;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include\GL;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include;$(ProjectDir)..\..\..\JCommon\3rdParties\glfw\include;$(ProjectDir)..\..\..\JCommon\\3rdParties\glm\include;$(ProjectDir)..\..\..\JCommon\3rdParties\SDL\include;$(ProjectDir)\..\..\Source\;$(ProjectDir)\;$(ProjectDir)..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include;..\..\..\JCommon\3rdParties\curlpp\include;..\..\..\JCommon\3rdParties\libcurl\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -163,7 +163,7 @@ XCOPY "$(SolutionDir)..\DLL\x64" "$(SolutionDir)..\Builds\x64"  /S /Y /E</Comman
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>JAppPch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\JCommon;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include\GL;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include;$(ProjectDir)..\..\..\JCommon\3rdParties\glfw\include;$(ProjectDir)..\..\..\JCommon\\3rdParties\glm\include;$(ProjectDir)..\..\..\JCommon\3rdParties\SDL\include;$(ProjectDir)\..\..\Source\;$(ProjectDir)\;$(ProjectDir)..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\JCommon;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include\GL;$(ProjectDir)..\..\..\JCommon\3rdParties\glew\include;$(ProjectDir)..\..\..\JCommon\3rdParties\glfw\include;$(ProjectDir)..\..\..\JCommon\\3rdParties\glm\include;$(ProjectDir)..\..\..\JCommon\3rdParties\SDL\include;$(ProjectDir)\..\..\Source\;$(ProjectDir)\;$(ProjectDir)..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include;..\..\..\JCommon\3rdParties\curlpp\include;..\..\..\JCommon\3rdParties\libcurl\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

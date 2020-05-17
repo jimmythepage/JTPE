@@ -6,7 +6,6 @@ using namespace J::BASE;
 
 JTimer::JTimer():mTime(0), mTimeToReach(0), mRepeat(false), mTimerCallback(NULL)
 {
-
 }
 JTimer::~JTimer()
 {
@@ -29,11 +28,8 @@ void JTimer::StartTimer(bool restart,bool repeat)
 {
 	Deactivate();
 	mRepeat= repeat;
-	if (restart)
-	{
-		mTime = 0;
-		mStartTime = std::chrono::high_resolution_clock::now();
-	}
+	mTime = 0;
+	mStartTime = std::chrono::high_resolution_clock::now();
 	Activate();
 }
 void JTimer::StopTimer()

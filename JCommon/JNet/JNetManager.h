@@ -31,6 +31,7 @@ namespace J
 
 			bool StartNetProvider(std::string& errorMsg);
 			void StopNetProvider();
+
 		private: 
 			NET_PROVIDER mNetProvider;
 			bool		 mNetProviderStarted;
@@ -39,4 +40,4 @@ namespace J
 	}
 }
 
-#endif // !JRENDERMANAGER
+#endif

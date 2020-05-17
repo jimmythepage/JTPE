@@ -11,6 +11,7 @@ var namespace_j_1_1_g_a_m_e =
     [ "JGameScreen", "class_j_1_1_g_a_m_e_1_1_j_game_screen.html", "class_j_1_1_g_a_m_e_1_1_j_game_screen" ],
     [ "JGameSprite", "class_j_1_1_g_a_m_e_1_1_j_game_sprite.html", "class_j_1_1_g_a_m_e_1_1_j_game_sprite" ],
     [ "JGameText", "class_j_1_1_g_a_m_e_1_1_j_game_text.html", "class_j_1_1_g_a_m_e_1_1_j_game_text" ],
+    [ "JGameVideoSprite", "class_j_1_1_g_a_m_e_1_1_j_game_video_sprite.html", "class_j_1_1_g_a_m_e_1_1_j_game_video_sprite" ],
     [ "JMainGameScreen", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen.html", "class_j_1_1_g_a_m_e_1_1_j_main_game_screen" ],
     [ "JMainMenuScreen", "class_j_1_1_g_a_m_e_1_1_j_main_menu_screen.html", "class_j_1_1_g_a_m_e_1_1_j_main_menu_screen" ],
     [ "JOkModule", "class_j_1_1_g_a_m_e_1_1_j_ok_module.html", "class_j_1_1_g_a_m_e_1_1_j_ok_module" ],

@@ -11,5 +11,6 @@ var class_j_1_1_g_a_m_e_1_1_j_boot_screen =
     [ "Update", "class_j_1_1_g_a_m_e_1_1_j_boot_screen.html#a6e2b767910c8ce4d7af1df0b8e7423b8", null ],
     [ "mAlphaTween", "class_j_1_1_g_a_m_e_1_1_j_boot_screen.html#aa37fe0d02334b4803037213245fe79ec", null ],
     [ "mBootModule", "class_j_1_1_g_a_m_e_1_1_j_boot_screen.html#ab1514a3c25fb37bc846e76c9c8545bdc", null ],
-    [ "mOkNetDialog", "class_j_1_1_g_a_m_e_1_1_j_boot_screen.html#acb1bee27f875ff3765bb6f26ab8f9a15", null ]
+    [ "mOkNetDialog", "class_j_1_1_g_a_m_e_1_1_j_boot_screen.html#acb1bee27f875ff3765bb6f26ab8f9a15", null ],
+    [ "mTestRequest", "class_j_1_1_g_a_m_e_1_1_j_boot_screen.html#aef1265df844e2c9769f01e3e70f69dc8", null ]
 ];

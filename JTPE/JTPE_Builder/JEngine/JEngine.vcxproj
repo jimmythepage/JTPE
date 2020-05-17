@@ -19,6 +19,54 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\cURLpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Easy.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Exception.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Form.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Info.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\CurlHandle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\OptionList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\OptionSetter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\SList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Multi.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\OptionBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Options.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JAudio\JAudio.cpp" />
     <ClCompile Include="..\..\..\JCommon\JAudio\JAudioClip.cpp" />
     <ClCompile Include="..\..\..\JCommon\JAudio\JAudioClipImpl.cpp" />
@@ -56,6 +104,7 @@
     <ClCompile Include="..\..\..\JCommon\JInput\Windows\JInputPointer_Win.cpp" />
     <ClCompile Include="..\..\..\JCommon\JInput\Windows\JInput_Keyboard_Win.cpp" />
     <ClCompile Include="..\..\..\JCommon\JNet\JNetManager.cpp" />
+    <ClCompile Include="..\..\..\JCommon\JNet\JRequest.cpp" />
     <ClCompile Include="..\..\..\JCommon\JPhysics\JBody.cpp" />
     <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysicObject.cpp" />
     <ClCompile Include="..\..\..\JCommon\JPhysics\JPhysics.cpp" />
@@ -126,6 +175,32 @@
     <ClCompile Include="..\..\..\JCommon\JTween\JFloatTween.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\cURLpp.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Easy.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Exception.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Form.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Info.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Infos.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\CurlHandle.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionContainer.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionContainerType.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionList.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionSetter.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\SList.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Multi.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Option.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\OptionBase.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Options.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Types.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\clone_ptr.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\EmptyType.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\NonCopyable.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\NullType.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\SmartPtr.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingFactoryMutex.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingSingle.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\TypeList.hpp" />
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\TypeTrait.hpp" />
     <ClInclude Include="..\..\..\JCommon\3rdParties\ffmpeg\VideoPlayer\defs.h" />
     <ClInclude Include="..\..\..\JCommon\JAudio\JAudio.h" />
     <ClInclude Include="..\..\..\JCommon\JAudio\JAudioClip.h" />
@@ -164,6 +239,7 @@
     <ClInclude Include="..\..\..\JCommon\JInput\Windows\JInputPointer_Win.h" />
     <ClInclude Include="..\..\..\JCommon\JInput\Windows\JInput_Keyboard_Win.h" />
     <ClInclude Include="..\..\..\JCommon\JNet\JNetManager.h" />
+    <ClInclude Include="..\..\..\JCommon\JNet\JRequest.h" />
     <ClInclude Include="..\..\..\JCommon\JPhysics\JBody.h" />
     <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysicObject.h" />
     <ClInclude Include="..\..\..\JCommon\JPhysics\JPhysics.h" />
@@ -225,6 +301,16 @@
     <ClInclude Include="..\..\..\JCommon\JTask\JTask.h" />
     <ClInclude Include="..\..\..\JCommon\JTween\JBaseTween.h" />
     <ClInclude Include="..\..\..\JCommon\JTween\JFloatTween.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Easy.inl" />
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Info.inl" />
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\CurlHandle.inl" />
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionContainer.inl" />
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionSetter.inl" />
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Option.inl" />
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingFactoryMutex.inl" />
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingSingle.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -315,7 +401,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>__WINDOWS__;_JDEBUG_;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include;..\..\..\JCommon\3rdParties\curlpp\include;..\..\..\JCommon\3rdParties\libcurl\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -325,8 +411,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\lib\x64</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\lib\x64;..\..\..\JCommon\3rdParties\libcurl\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2_mixer.lib;libcurl.dll.a;libcurl.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -357,7 +443,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\JCommon;..\..\..\JCommon\3rdParties\glew\include\GL;..\..\..\JCommon\3rdParties\glew\include;..\..\..\JCommon\3rdParties\glfw\include;..\..\..\JCommon\3rdParties\glm\include;..\..\..\JCommon\3rdParties\SDL\include;..\..\..\JCommon\3rdParties\;..\..\..\JCommon\3rdParties\ffmpeg\include;..\..\..\JCommon\3rdParties\ffmpeg\SDL_kitchensink\include;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\include;..\..\..\JCommon\3rdParties\curlpp\include;..\..\..\JCommon\3rdParties\libcurl\include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>JCommonPch.h</PrecompiledHeaderFile>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
@@ -368,8 +454,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\lib\x64</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\JCommon\3rdParties\glfw\lib\x64;..\..\..\JCommon\3rdParties\glm\lib\x64;..\..\..\JCommon\3rdParties\glew\lib\x64;..\..\..\JCommon\3rdParties\SDL\Lib\x64;..\..\..\JCommon\3rdParties\Steam\public\steam\Lib\win64;..\..\..\JCommon\3rdParties\ffmpeg\lib;..\..\..\JCommon\3rdParties\SDL\SDL2_mixer\lib\x64;..\..\..\JCommon\3rdParties\libcurl\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glm_static.lib;glew32.lib;opengl32.lib;glu32.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;SDL2_ttf.lib;steam_api64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;SDL2_mixer.lib;libcurl.dll.a;libcurl.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

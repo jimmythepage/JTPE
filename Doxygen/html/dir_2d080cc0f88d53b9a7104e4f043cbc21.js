@@ -36,5 +36,9 @@ var dir_2d080cc0f88d53b9a7104e4f043cbc21 =
     [ "JGameText.cpp", "_j_game_text_8cpp.html", null ],
     [ "JGameText.h", "_j_game_text_8h.html", [
       [ "JGameText", "class_j_1_1_g_a_m_e_1_1_j_game_text.html", "class_j_1_1_g_a_m_e_1_1_j_game_text" ]
+    ] ],
+    [ "JGameVideoSprite.cpp", "_j_game_video_sprite_8cpp.html", null ],
+    [ "JGameVideoSprite.h", "_j_game_video_sprite_8h.html", [
+      [ "JGameVideoSprite", "class_j_1_1_g_a_m_e_1_1_j_game_video_sprite.html", "class_j_1_1_g_a_m_e_1_1_j_game_video_sprite" ]
     ] ]
 ];

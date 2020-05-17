@@ -14,5 +14,7 @@ var namespace_j_1_1_r_e_n_d_e_r =
     [ "JText", "class_j_1_1_r_e_n_d_e_r_1_1_j_text.html", "class_j_1_1_r_e_n_d_e_r_1_1_j_text" ],
     [ "JTextSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_text_s_d_l.html", "class_j_1_1_r_e_n_d_e_r_1_1_j_text_s_d_l" ],
     [ "JTextureManagerSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_texture_manager_s_d_l.html", "class_j_1_1_r_e_n_d_e_r_1_1_j_texture_manager_s_d_l" ],
-    [ "JVec2", "struct_j_1_1_r_e_n_d_e_r_1_1_j_vec2.html", "struct_j_1_1_r_e_n_d_e_r_1_1_j_vec2" ]
+    [ "JVec2", "struct_j_1_1_r_e_n_d_e_r_1_1_j_vec2.html", "struct_j_1_1_r_e_n_d_e_r_1_1_j_vec2" ],
+    [ "JVideoSprite", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite.html", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite" ],
+    [ "JVideoSpriteSDL", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite_s_d_l.html", "class_j_1_1_r_e_n_d_e_r_1_1_j_video_sprite_s_d_l" ]
 ];

@@ -43,6 +43,15 @@
     <Filter Include="JAudio\JSDL">
       <UniqueIdentifier>{a7a0bb12-5161-43f4-9144-c004b09894d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JNet\JCurlpp">
+      <UniqueIdentifier>{8ff18cc4-f15b-4caf-ac91-9e89bbd288b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JNet\JCurlpp\include">
+      <UniqueIdentifier>{af143f2a-481e-47f2-82f2-60c0e8b8bdb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JNet\JCurlpp\src">
+      <UniqueIdentifier>{7a13a28b-5aef-4576-8824-285e2fba5492}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\JCommon\JBase\JBase.cpp">
@@ -208,6 +217,45 @@
     </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JAudio\JAudioClipImpl.cpp">
       <Filter>JAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\cURLpp.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Easy.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Exception.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Form.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Info.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\CurlHandle.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\OptionList.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\OptionSetter.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\internal\SList.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Multi.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\OptionBase.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\3rdParties\curlpp\src\curlpp\Options.cpp">
+      <Filter>JNet\JCurlpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JNet\JRequest.cpp">
+      <Filter>JNet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -399,5 +447,112 @@
     <ClInclude Include="..\..\..\JCommon\JAudio\JAudioClipImpl.h">
       <Filter>JAudio</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\cURLpp.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Easy.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Exception.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Form.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Info.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Infos.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\CurlHandle.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionContainer.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionContainerType.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionList.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionSetter.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\SList.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Multi.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Option.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\OptionBase.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Options.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Types.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\clone_ptr.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\EmptyType.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\NonCopyable.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\NullType.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\SmartPtr.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingFactoryMutex.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingSingle.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\TypeList.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\TypeTrait.hpp">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JNet\JRequest.h">
+      <Filter>JNet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Easy.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Info.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\CurlHandle.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionContainer.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\internal\OptionSetter.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\curlpp\Option.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingFactoryMutex.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
+    <None Include="..\..\..\JCommon\3rdParties\curlpp\include\utilspp\ThreadingSingle.inl">
+      <Filter>JNet\JCurlpp\include</Filter>
+    </None>
   </ItemGroup>
 </Project>

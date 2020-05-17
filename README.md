@@ -1,7 +1,7 @@
 # JTPE
 
 JTPEngine is a 2D C++ Game Engine.
-Its goal is to provide an abstract, lightweight and cross-platform ready engine that uses only C++ and JSON scripting.
+Its goal is to provide an abstract, lightweight and cross-platform ready engine that uses only C++/std and JSON scripting.
 This engine is designed for coders who wants a starting point to create 2D apps and games without messing with major engines on the market.
 
 # Modules and build examples:
@@ -14,6 +14,7 @@ JTPE is currently composed by several modules:
 - GUI, (Animated) sprites, game levels JSON scripting.
 - video player (currently using ffmpeg)
 - audio player with 16 channels
+- REST library to handle GET/POST requests easily and asynchronously
 
 The GUI module is made to easily load complex screens composed by re-usable JSON modules.
 
@@ -42,6 +43,7 @@ JTPE engine is an abstract layer and the current Windows implementation is based
 - FFMPEG https://www.ffmpeg.org/
 - Steamworks SDK (https://partner.steamgames.com/doc/sdk)
 - SDL_mixer https://www.libsdl.org/projects/SDL_mixer/
+- LIBCURL https://curl.haxx.se/libcurl/ and CURLPP http://www.curlpp.org/
 
 The rights to use those libraries remain on their owners licenses.
 My goal is to use implementation using only GNU/MIT or other popular OpenSource libraries, to keep JTPE really free to use.

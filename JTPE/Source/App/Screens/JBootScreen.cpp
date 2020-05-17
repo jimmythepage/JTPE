@@ -41,6 +41,8 @@ void JBootScreen::Init()
 	{
 		LOG_INFO(0, "Net start success \n", 0);
 	}
+	mTestRequest.Init("TestGetRequest");
+	mTestRequest.Request("http://httpbin.org/response-headers?key=eee");
 }
 void JBootScreen::OkNetCallback(JGameButton* caller, json params)
 {
