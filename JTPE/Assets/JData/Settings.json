@@ -3,5 +3,9 @@
 "ScreenHeight":720,
 "LogicalHeight":720,
 "FullScreen":false,
-"DataFolder":"JData"
+"DataFolder":"JData",
+"Transparent": false,
+"R_CutOff":  0,
+"G_CutOff":  0,
+"B_CutOff":  0
 }

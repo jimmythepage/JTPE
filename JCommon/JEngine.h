@@ -17,6 +17,8 @@ namespace J
 			unsigned int	LogicalWidth,LogicalHeight;
 			float			LogicalRatioX, LogicalRatioY;
 			bool			FullScreen;
+      bool      Transparent;
+      unsigned int R_CutOff, G_CutOff, B_CutOff;
 			std::string		DataFolder;
 		};
 		class JEngine : public ::J::BASE::JBase

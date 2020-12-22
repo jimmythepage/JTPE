@@ -26,6 +26,8 @@ namespace J
 			SDL_Window *		mWindow;
 			SDL_Renderer *		mRenderer;
 			SDL_Event			mEvent;
+
+      bool MakeWindowTransparent(SDL_Window* window, COLORREF colorKey);
 		};
 	}
 }

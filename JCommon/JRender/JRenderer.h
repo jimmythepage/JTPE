@@ -38,6 +38,8 @@ namespace J
 			unsigned int mScreenWidth, mScreenHeight;
 			unsigned int mLogicalWidth, mLogicalHeight;
 			bool		 mFullScreen;
+      bool     mIsTransparent;
+      unsigned int mRCutoff, mGCutoff, mBCutoff;
 		};
 	}
 }

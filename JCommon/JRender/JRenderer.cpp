@@ -24,6 +24,10 @@ void JRenderer::Init(const std::string name, const std::string appName)
 	mLogicalWidth = gJEngine.GetSettings()->LogicalWidth;
 	mLogicalHeight = gJEngine.GetSettings()->LogicalHeight;
 	mFullScreen = gJEngine.GetSettings()->FullScreen;
+  mIsTransparent = gJEngine.GetSettings()->Transparent;
+  mRCutoff = gJEngine.GetSettings()->R_CutOff;
+  mGCutoff = gJEngine.GetSettings()->G_CutOff;
+  mBCutoff = gJEngine.GetSettings()->B_CutOff;
 }
 void JRenderer::Clear()
 {

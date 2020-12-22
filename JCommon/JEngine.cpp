@@ -36,6 +36,22 @@ void JEngine::Init(const std::string name, const std::string absBasePath, const 
 	mSettings.DataFolder = absBasePath + dataFolder + "/";
 	mSettings.LogicalRatioX = (float)mSettings.ScreenWidth / (float)mSettings.LogicalWidth;
 	mSettings.LogicalRatioY = (float)mSettings.ScreenHeight / (float)mSettings.LogicalHeight;
+  if (!settings["Transparent"].is_null())
+  {
+    mSettings.Transparent = settings["Transparent"];
+  }
+  if (!settings["R_CutOff"].is_null())
+  {
+    mSettings.R_CutOff = settings["R_CutOff"];
+  }
+  if (!settings["G_CutOff"].is_null())
+  {
+    mSettings.G_CutOff = settings["G_CutOff"]; \
+  }
+  if (!settings["B_CutOff"].is_null())
+  {
+    mSettings.B_CutOff = settings["B_CutOff"];
+  }
 
 	//ORDER IS IMPORTANT
 	gJTextDB.Init("JTextDB");
