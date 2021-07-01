@@ -6,7 +6,7 @@ This engine is designed for coders who wants a starting point to create 2D apps 
 
 # Modules and build examples:
 JTPE is currently composed by several modules:
-- File managemer, including crypted/decrytped loadings
+- File manager, including encrypted/decrytped loadings
 - Easy task/thread manager
 - Abstract 2D rendering with logic scale rendering
 - Abstract Input manager
