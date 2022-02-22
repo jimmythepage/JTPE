@@ -18,7 +18,7 @@ JApp::~JApp()
 void JApp::Init(const std::string name)
 {
 	JBase::Init(name);
-	gJEngine.Init(name,"./JData/Settings.json", ENGINE::EngineOptions::USES_BLOB|ENGINE::USES_STEAM);
+	gJEngine.Init(name,"./JData/Settings.json", /*ENGINE::EngineOptions::USES_BLOB|*/ENGINE::USES_STEAM);
 	gJTextDB.SetLanguage(J::BASE::Language::ENG);
 	gGameEngine.Init("GameEngine");
 	GAME::JBootScreen* bootScreen = new GAME::JBootScreen();

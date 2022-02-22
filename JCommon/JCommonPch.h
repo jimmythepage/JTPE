@@ -9,6 +9,7 @@
 //#define __STEAM__
 
 #define		__LIBCURL__
+//#define     __FFMPEG__
 
 //COMMON LIBRARIES
 #include <stdio.h>
@@ -52,6 +53,7 @@ using json = nlohmann::json;
 #include <SDL_mixer.h>
 #endif
 //FFMPEG
+#ifdef __FFMPEG__
 extern "C"
 {
 #include <ffmpeg/include/libavcodec/avcodec.h>
@@ -68,6 +70,8 @@ extern "C"
 }
 //FFMPEG PLAYER
 #include "ffmpeg/VideoPlayer/defs.h"
+
+#endif
 
 //JBASE
 #include "JBase/JBaseDefines.h"
@@ -140,7 +144,11 @@ extern "C"
 	#include "JRender/JSDL/JRendererSDL.h"
 	#include "JRender/JSDL/JTextureManagerSDL.h"
 	#include "JRender/JSDL/JSpriteSDL.h"
+
+#if defined(__FFMPEG__)
 	#include "JRender/JSDL/JVideoSpriteSDL.h"
+#endif
+
 	#include "JRender/JSDL/JTextSDL.h"
 	#include "JAudio/JSDL/JAudioSDL.h"
 	#include "JAudio/JSDL/JAudioClipSDL.h"

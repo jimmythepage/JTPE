@@ -14,7 +14,7 @@ mLoop(false), mIsPlaying(false), mFPS(0)
 		mRenderable = new JSpriteSimple2D();
 #elif defined(__SFML__)
 		mRenderable = new JSpriteSFML();
-#elif defined(__SDL__)
+#elif defined(__SDL__) && defined(__FFMPEG__)
 		mRenderable = new JVideoSpriteSDL();
 #else
 		mRenderable = new JRenderable();
@@ -29,7 +29,7 @@ JVideoSprite::~JVideoSprite()
 void JVideoSprite::SetLoop(bool loop)
 { 
 	mLoop = loop; 
-#if defined(__SDL__)
+#if defined(__SDL__) && defined(__FFMPEG__)
 	((JVideoSpriteSDL*)mRenderable)->SetLoop(mLoop);
 #endif
 }
@@ -49,7 +49,7 @@ void JVideoSprite::PauseVideo()
 void JVideoSprite::StopVideo()
 {
 	mFrameTimer.StopTimer();
-#if defined(__SDL__)
+#if defined(__SDL__) && defined(__FFMPEG__)
 	((JVideoSpriteSDL*)mRenderable)->RestartVideo();
 #endif
 	mIsPlaying = false;
@@ -83,7 +83,7 @@ void JVideoSprite::Activate()
 }
 void JVideoSprite::FrameTimerCallback()
 {
-#if defined(__SDL__)
+#if defined(__SDL__) && defined(__FFMPEG__)
 	((JVideoSpriteSDL*)mRenderable)->UpdateVideoFrame();
 #endif
 }

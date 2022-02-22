@@ -194,9 +194,6 @@
     <ClCompile Include="..\..\..\JCommon\JRender\JVideoSprite.cpp">
       <Filter>JRender</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.cpp">
-      <Filter>JRender\JSDL</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JGame\JGameVideoSprite.cpp">
       <Filter>JGame</Filter>
     </ClCompile>
@@ -256,6 +253,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\JCommon\JNet\JRequest.cpp">
       <Filter>JNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.cpp">
+      <Filter>JRender\JSDL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -420,9 +420,6 @@
     <ClInclude Include="..\..\..\JCommon\JRender\JVideoSprite.h">
       <Filter>JRender</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.h">
-      <Filter>JRender\JSDL</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\JCommon\JGame\JGameVideoSprite.h">
       <Filter>JGame</Filter>
     </ClInclude>
@@ -527,6 +524,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\JCommon\JNet\JRequest.h">
       <Filter>JNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JCommon\JRender\JSDL\JVideoSpriteSDL.h">
+      <Filter>JRender\JSDL</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
