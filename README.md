@@ -2,7 +2,7 @@
 
 JTPEngine is a 2D C++ Game Engine.
 Its goal is to provide an abstract, lightweight and cross-platform ready engine that uses only C++/std and JSON scripting.
-This engine is designed for coders who wants a starting point to create 2D apps and games without messing with major engines on the market.
+This engine is designed for coders who want a starting point to create 2D apps and games without messing with major engines on the market.
 
 # Modules and build examples:
 JTPE is currently composed by several modules:
@@ -18,7 +18,7 @@ JTPE is currently composed by several modules:
 
 The GUI module is made to easily load complex screens composed by re-usable JSON modules.
 
-The build example is a ready to use Windows port created for Visual Studio (2017).
+The build example is a ready to use Windows port created for Visual Studio (2019).
 The engine, with the due adaption work, can be ported to any platform.
 
 # Installation: 
@@ -27,10 +27,9 @@ No CMake is provided. A common shared library of class is the center of the engi
 # Roadmap:
 JTPE has a set Milestone to reach its alpha state once several major features will be released.
 The next big things will be:
-- Particle integration
+- porting to OGLES/OGL (getting rid of SDL and other third parties libraries)
+- Particles integration
 - Simple game example uploaded
-- Extensive Wiki page updates with several examples!
-- BOX2D/Physics implementation
 
 # Contributing:
 Any help of any kind will be apprieciated, feel free to contribute and contact me for any question.
