@@ -29,8 +29,8 @@ void JAudioClipSDL::Init(const std::string name)
 }
 void JAudioClipSDL::Clear()
 {
-	JAudioClipImpl::Clear();
 	Stop();
+	JAudioClipImpl::Clear();
 	Mix_FreeChunk(_clipSample);
 }
 void JAudioClipSDL::Update()
